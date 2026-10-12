@@ -21,7 +21,7 @@
     }
   },
   "schema": 2,
-  "updated": "2026-10-11",
+  "updated": "2026-10-12",
   "sources": [
     "https://models.dev/api.json"
   ],
@@ -4604,6 +4604,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -4649,6 +4657,14 @@
           "cache_read": 0.2,
           "cache_write": 0.08333,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.08333,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -4691,6 +4707,14 @@
           "from": "2026-10-11",
           "in": 0.6,
           "out": 1.1,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
@@ -6430,6 +6454,14 @@
           "out": 0.65736,
           "cache_read": 0.006972,
           "cache_write": 0.21912,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.24948,
+          "out": 0.74844,
+          "cache_read": 0.007938,
+          "cache_write": 0.24948,
           "source": "kilo"
         }
       ]
@@ -12863,6 +12895,14 @@
           "cache_read": 0.175,
           "cache_write": 0.35,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.5,
+          "out": 2,
+          "cache_read": 0.1,
+          "cache_write": 0.5,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -12901,6 +12941,14 @@
           "out": 1.4,
           "cache_read": 0.175,
           "cache_write": 0.35,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.5,
+          "out": 2,
+          "cache_read": 0.1,
+          "cache_write": 0.5,
           "source": "nano-gpt"
         }
       ]
@@ -13297,6 +13345,14 @@
           "cache_read": 0.2,
           "cache_write": 1,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -13309,6 +13365,14 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 1,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
           "source": "nano-gpt"
         }
       ]
@@ -13376,6 +13440,14 @@
           "cache_read": 0.3,
           "cache_write": 1.5,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.7,
+          "out": 2.5,
+          "cache_read": 0.18,
+          "cache_write": 0.7,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -13388,6 +13460,14 @@
           "out": 2.6,
           "cache_read": 0.15,
           "cache_write": 0.75,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.7,
+          "out": 2.5,
+          "cache_read": 0.18,
+          "cache_write": 0.7,
           "source": "nano-gpt"
         }
       ]
@@ -14188,6 +14268,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -14226,6 +14314,14 @@
           "out": 2.55,
           "cache_read": 0.13,
           "cache_write": 0.5,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
           "source": "nano-gpt"
         }
       ]
@@ -19104,6 +19200,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -19149,6 +19253,14 @@
           "cache_read": 0.2,
           "cache_write": 0.08333,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.08333,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -19191,6 +19303,14 @@
           "from": "2026-10-11",
           "in": 0.6,
           "out": 1.1,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
@@ -20710,6 +20830,14 @@
           "cache_read": 0.15,
           "cache_write": 0.3,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.375,
+          "out": 2,
+          "cache_read": 0.07,
+          "cache_write": 0.375,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -20796,6 +20924,14 @@
           "out": 2.85,
           "cache_read": 0.04999999999999999,
           "cache_write": 0.5,
+          "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.45,
+          "out": 1.95,
+          "cache_read": 0.04499999999999999,
+          "cache_write": 0.45,
           "source": "chutes"
         }
       ]
@@ -21122,6 +21258,14 @@
           "out": 15,
           "cache_read": 0.29999999999999993,
           "cache_write": 3,
+          "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1.85,
+          "out": 9.5,
+          "cache_read": 0.18499999999999997,
+          "cache_write": 1.85,
           "source": "chutes"
         }
       ]
@@ -29973,6 +30117,14 @@
           "cache_read": 0,
           "cache_write": 0.16,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0,
+          "cache_write": 0.15,
+          "source": "vercel"
         }
       ]
     },
@@ -31102,6 +31254,14 @@
           "cache_read": 0,
           "cache_write": 0.4,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.3,
+          "out": 2.9000000000000004,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "helicone"
         }
       ]
     },
@@ -31690,6 +31850,19 @@
           "out": 7.5,
           "cache_read": 0.3,
           "cache_write": 1.5,
+          "tier_threshold": 32001,
+          "tier_in": 2.7,
+          "tier_out": 13.5,
+          "tier_cache_read": 0.54,
+          "tier_cache_write": 2.7,
+          "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.22,
+          "out": 1.8,
+          "cache_read": 0.022,
+          "cache_write": 0.22,
           "tier_threshold": 32001,
           "tier_in": 2.7,
           "tier_out": 13.5,
@@ -32472,6 +32645,14 @@
           "cache_read": 0,
           "cache_write": 0.4,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.2,
+          "out": 0.88,
+          "cache_read": 0.11,
+          "cache_write": 0.2,
+          "source": "vercel"
         }
       ]
     },
@@ -33007,6 +33188,14 @@
           "out": 2,
           "cache_read": 0.029999999999999992,
           "cache_write": 0.3,
+          "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.25,
+          "out": 2,
+          "cache_read": 0.024999999999999994,
+          "cache_write": 0.25,
           "source": "chutes"
         }
       ]
@@ -33684,6 +33873,14 @@
           "cache_read": 0.023999999999999994,
           "cache_write": 0.24,
           "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.039,
+          "out": 1.25,
+          "cache_read": 0.003899999999999999,
+          "cache_write": 0.039,
+          "source": "chutes"
         }
       ]
     },
@@ -33737,6 +33934,14 @@
           "cache_read": 0.125,
           "cache_write": 0.75,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1,
+          "out": 3,
+          "cache_read": 0.22,
+          "cache_write": 1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -33757,6 +33962,14 @@
           "out": 2.5,
           "cache_read": 0.125,
           "cache_write": 0.75,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1,
+          "out": 3,
+          "cache_read": 0.22,
+          "cache_write": 1,
           "source": "nano-gpt"
         }
       ]
@@ -34813,6 +35026,19 @@
           "out": 0.5,
           "cache_read": 0.25,
           "cache_write": 0.5,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "skyfall-31b-v4.2": {
+      "id": "skyfall-31b-v4.2",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 0.12,
+          "out": 0.15,
+          "cache_read": 0.06,
+          "cache_write": 0.12,
           "source": "nano-gpt"
         }
       ]
@@ -54149,6 +54375,14 @@
           "cache_read": 0.04999999999999999,
           "cache_write": 0.5,
           "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.45,
+          "out": 1.95,
+          "cache_read": 0.04499999999999999,
+          "cache_write": 0.45,
+          "source": "chutes"
         }
       ]
     },
@@ -54161,6 +54395,14 @@
           "out": 15,
           "cache_read": 0.29999999999999993,
           "cache_write": 3,
+          "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1.85,
+          "out": 9.5,
+          "cache_read": 0.18499999999999997,
+          "cache_write": 1.85,
           "source": "chutes"
         }
       ]
@@ -54240,6 +54482,14 @@
           "cache_read": 0.029999999999999992,
           "cache_write": 0.3,
           "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.25,
+          "out": 2,
+          "cache_read": 0.024999999999999994,
+          "cache_write": 0.25,
+          "source": "chutes"
         }
       ]
     },
@@ -54268,6 +54518,14 @@
           "out": 2.2,
           "cache_read": 0.023999999999999994,
           "cache_write": 0.24,
+          "source": "chutes"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.039,
+          "out": 1.25,
+          "cache_read": 0.003899999999999999,
+          "cache_write": 0.039,
           "source": "chutes"
         }
       ]
@@ -81770,6 +82028,14 @@
           "cache_read": 0.000696,
           "cache_write": 0.0348,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0333,
+          "out": 0.1332,
+          "cache_read": 0.000666,
+          "cache_write": 0.0333,
+          "source": "kilo"
         }
       ]
     },
@@ -81966,6 +82232,14 @@
           "out": 0.65736,
           "cache_read": 0.006972,
           "cache_write": 0.21912,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.24948,
+          "out": 0.74844,
+          "cache_read": 0.007938,
+          "cache_write": 0.24948,
           "source": "kilo"
         }
       ]
@@ -82289,6 +82563,14 @@
           "out": 0.64,
           "cache_read": 0.018,
           "cache_write": 0.018,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0128,
+          "out": 0.768,
+          "cache_read": 0.0128,
+          "cache_write": 0.0128,
           "source": "kilo"
         }
       ]
@@ -83298,6 +83580,14 @@
           "cache_read": 0.038,
           "cache_write": 0.039,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.055,
+          "out": 5,
+          "cache_read": 0.06,
+          "cache_write": 0.055,
+          "source": "kilo"
         }
       ]
     },
@@ -83441,6 +83731,14 @@
           "in": 0.3,
           "out": 0.9,
           "cache_read": 0.055,
+          "cache_write": 0.3,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.3,
+          "out": 0.9,
+          "cache_read": 0.05,
           "cache_write": 0.3,
           "source": "kilo"
         }
@@ -83758,6 +84056,14 @@
           "out": 0.5,
           "cache_read": 0.0125,
           "cache_write": 0.04,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0232,
+          "out": 1.2,
+          "cache_read": 0.0232,
+          "cache_write": 0.0232,
           "source": "kilo"
         }
       ]
@@ -85361,6 +85667,14 @@
           "out": 14.9,
           "cache_read": 0.29,
           "cache_write": 0.75,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.73,
+          "out": 10,
+          "cache_read": 0.55,
+          "cache_write": 0.73,
           "source": "kilo"
         }
       ]
@@ -102993,6 +103307,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -103038,6 +103360,14 @@
           "cache_read": 0.2,
           "cache_write": 0.08333,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.08333,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -103080,6 +103410,14 @@
           "from": "2026-10-11",
           "in": 0.6,
           "out": 1.1,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
@@ -105421,6 +105759,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105668,6 +106014,14 @@
           "cache_read": 0.175,
           "cache_write": 0.35,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.5,
+          "out": 2,
+          "cache_read": 0.1,
+          "cache_write": 0.5,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105693,6 +106047,14 @@
           "out": 1.4,
           "cache_read": 0.175,
           "cache_write": 0.35,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.5,
+          "out": 2,
+          "cache_read": 0.1,
+          "cache_write": 0.5,
           "source": "nano-gpt"
         }
       ]
@@ -105732,6 +106094,14 @@
           "out": 1.4,
           "cache_read": 0.175,
           "cache_write": 0.35,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.5,
+          "out": 2,
+          "cache_read": 0.1,
+          "cache_write": 0.5,
           "source": "nano-gpt"
         }
       ]
@@ -105884,6 +106254,14 @@
           "cache_read": 0.13,
           "cache_write": 0.5,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105897,6 +106275,14 @@
           "cache_read": 0.2,
           "cache_write": 1,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105909,6 +106295,14 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 1,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
           "source": "nano-gpt"
         }
       ]
@@ -105936,6 +106330,14 @@
           "cache_read": 0.15,
           "cache_write": 0.75,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.7,
+          "out": 2.5,
+          "cache_read": 0.18,
+          "cache_write": 0.7,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105949,6 +106351,14 @@
           "cache_read": 0.3,
           "cache_write": 1.5,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.7,
+          "out": 2.5,
+          "cache_read": 0.18,
+          "cache_write": 0.7,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -105961,6 +106371,14 @@
           "out": 2.6,
           "cache_read": 0.15,
           "cache_write": 0.75,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.7,
+          "out": 2.5,
+          "cache_read": 0.18,
+          "cache_write": 0.7,
           "source": "nano-gpt"
         }
       ]
@@ -106030,6 +106448,14 @@
           "from": "2026-10-11",
           "in": 0.6,
           "out": 1.1,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
@@ -106180,6 +106606,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -106192,6 +106626,14 @@
           "out": 2.55,
           "cache_read": 0.13,
           "cache_write": 0.5,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 1.9,
+          "cache_read": 0.1,
+          "cache_write": 0.6,
           "source": "nano-gpt"
         }
       ]
@@ -107105,6 +107547,14 @@
           "cache_read": 0.4,
           "cache_write": 1.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0.5,
+          "cache_write": 2,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -107182,6 +107632,14 @@
           "out": 4.8,
           "cache_read": 0.4,
           "cache_write": 1.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0.5,
+          "cache_write": 2,
           "source": "nano-gpt"
         }
       ]
@@ -107293,6 +107751,14 @@
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -107338,6 +107804,14 @@
           "cache_read": 0.2,
           "cache_write": 0.08333,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
+          "cache_read": 0.2,
+          "cache_write": 0.08333,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -107380,6 +107854,14 @@
           "from": "2026-10-11",
           "in": 0.6,
           "out": 1.1,
+          "cache_read": 0.2,
+          "cache_write": 0.6,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6,
+          "out": 0.6248,
           "cache_read": 0.2,
           "cache_write": 0.6,
           "source": "nano-gpt"
@@ -107807,6 +108289,14 @@
           "cache_read": 0.15,
           "cache_write": 0.3,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.375,
+          "out": 2,
+          "cache_read": 0.07,
+          "cache_write": 0.375,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -107819,6 +108309,14 @@
           "out": 1.9,
           "cache_read": 0.15,
           "cache_write": 0.3,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.375,
+          "out": 2,
+          "cache_read": 0.07,
+          "cache_write": 0.375,
           "source": "nano-gpt"
         }
       ]
@@ -107858,6 +108356,14 @@
           "out": 4,
           "cache_read": 0.19,
           "cache_write": 0.95,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.6712,
+          "out": 3.35,
+          "cache_read": 0.18,
+          "cache_write": 0.6712,
           "source": "nano-gpt"
         }
       ]
@@ -108282,6 +108788,14 @@
           "out": 0.6,
           "cache_read": 0.075,
           "cache_write": 0.15,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.1875,
+          "out": 0.6525,
+          "cache_read": 0.05,
+          "cache_write": 0.1875,
           "source": "nano-gpt"
         }
       ]
@@ -110213,6 +110727,14 @@
           "cache_read": 0.075,
           "cache_write": 0.15,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.09,
+          "out": 1.1,
+          "cache_read": 0.075,
+          "cache_write": 0.09,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -111034,6 +111556,14 @@
           "cache_read": 0.125,
           "cache_write": 0.75,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1,
+          "out": 3,
+          "cache_read": 0.22,
+          "cache_write": 1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -111054,6 +111584,14 @@
           "out": 2.5,
           "cache_read": 0.125,
           "cache_write": 0.75,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 1,
+          "out": 3,
+          "cache_read": 0.22,
+          "cache_write": 1,
           "source": "nano-gpt"
         }
       ]
@@ -111351,6 +111889,19 @@
           "out": 0.5,
           "cache_read": 0.25,
           "cache_write": 0.5,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000skyfall-31b-v4.2": {
+      "id": "skyfall-31b-v4.2",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 0.12,
+          "out": 0.15,
+          "cache_read": 0.06,
+          "cache_write": 0.12,
           "source": "nano-gpt"
         }
       ]
@@ -111774,6 +112325,25 @@
         }
       ]
     },
+    "nearai\u0000claude-haiku-5-5": {
+      "id": "claude-haiku-5-5",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 0.1,
+          "out": 0.5,
+          "cache_read": 0.01,
+          "cache_write": 0.125,
+          "cache_write_1h": 0.2,
+          "tier_threshold": 100000,
+          "tier_in": 0.5,
+          "tier_out": 2.5,
+          "tier_cache_read": 0.05,
+          "tier_cache_write": 0.625,
+          "source": "nearai"
+        }
+      ]
+    },
     "nearai\u0000claude-opus-4-6": {
       "id": "claude-opus-4-6",
       "rates": [
@@ -111830,6 +112400,20 @@
         }
       ]
     },
+    "nearai\u0000claude-opus-5-5": {
+      "id": "claude-opus-5-5",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.2,
+          "cache_write": 5,
+          "cache_write_1h": 8,
+          "source": "nearai"
+        }
+      ]
+    },
     "nearai\u0000claude-sonnet-4-5": {
       "id": "claude-sonnet-4-5",
       "rates": [
@@ -111881,6 +112465,20 @@
         }
       ]
     },
+    "nearai\u0000claude-sonnet-5-5": {
+      "id": "claude-sonnet-5-5",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
+          "cache_write": 2.5,
+          "cache_write_1h": 4,
+          "source": "nearai"
+        }
+      ]
+    },
     "nearai\u0000deepseek-v3.2": {
       "id": "deepseek-v3.2",
       "rates": [
@@ -111890,6 +112488,19 @@
           "out": 1.1,
           "cache_read": 0.55,
           "cache_write": 1.1,
+          "source": "nearai"
+        }
+      ]
+    },
+    "nearai\u0000deepseek-v4.1-flash": {
+      "id": "deepseek-v4.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-12",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
           "source": "nearai"
         }
       ]
@@ -112320,6 +112931,19 @@
       "rates": [
         {
           "from": "2026-10-11",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0.5,
+          "cache_write": 2,
+          "source": "nearai"
+        }
+      ]
+    },
+    "nearai\u0000grok-4.7": {
+      "id": "grok-4.7",
+      "rates": [
+        {
+          "from": "2026-10-12",
           "in": 2,
           "out": 6,
           "cache_read": 0.5,
@@ -124304,6 +124928,14 @@
           "cache_read": 0.000696,
           "cache_write": 0.0348,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0333,
+          "out": 0.1332,
+          "cache_read": 0.000666,
+          "cache_write": 0.0333,
+          "source": "openrouter"
         }
       ]
     },
@@ -124500,6 +125132,14 @@
           "out": 0.65736,
           "cache_read": 0.006972,
           "cache_write": 0.21912,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.24948,
+          "out": 0.74844,
+          "cache_read": 0.007938,
+          "cache_write": 0.24948,
           "source": "openrouter"
         }
       ]
@@ -124832,6 +125472,14 @@
           "cache_read": 0.018,
           "cache_write": 0.018,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0128,
+          "out": 0.768,
+          "cache_read": 0.0128,
+          "cache_write": 0.0128,
+          "source": "openrouter"
         }
       ]
     },
@@ -124996,6 +125644,14 @@
           "out": 0.64,
           "cache_read": 0.018,
           "cache_write": 0.018,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.016,
+          "out": 0.64,
+          "cache_read": 0.016,
+          "cache_write": 0.016,
           "source": "openrouter"
         }
       ]
@@ -125206,6 +125862,14 @@
           "out": 0.4176,
           "cache_read": 0.0174,
           "cache_write": 0.2088,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.436044,
+          "out": 0.872088,
+          "cache_read": 0.036337,
+          "cache_write": 0.436044,
           "source": "openrouter"
         }
       ]
@@ -125496,6 +126160,14 @@
           "out": 1.2,
           "cache_read": 0.006,
           "cache_write": 0.3,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.003,
+          "cache_write": 0.15,
           "source": "openrouter"
         }
       ]
@@ -126084,6 +126756,14 @@
           "cache_read": 0.0375,
           "cache_write": 0.0675,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.09,
+          "out": 0.3,
+          "cache_read": 0.05,
+          "cache_write": 0.09,
+          "source": "openrouter"
         }
       ]
     },
@@ -126360,6 +127040,14 @@
           "cache_read": 0.038,
           "cache_write": 0.039,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.055,
+          "out": 5,
+          "cache_read": 0.06,
+          "cache_write": 0.055,
+          "source": "openrouter"
         }
       ]
     },
@@ -126503,6 +127191,14 @@
           "in": 0.3,
           "out": 0.9,
           "cache_read": 0.055,
+          "cache_write": 0.3,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.3,
+          "out": 0.9,
+          "cache_read": 0.05,
           "cache_write": 0.3,
           "source": "openrouter"
         }
@@ -126924,6 +127620,14 @@
           "cache_read": 0.038,
           "cache_write": 0.039,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.079,
+          "out": 4.8,
+          "cache_read": 0.059,
+          "cache_write": 0.079,
+          "source": "openrouter"
         }
       ]
     },
@@ -127016,6 +127720,14 @@
           "out": 0.5,
           "cache_read": 0.03,
           "cache_write": 0.15,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0232,
+          "out": 1.2,
+          "cache_read": 0.0232,
+          "cache_write": 0.0232,
           "source": "openrouter"
         }
       ]
@@ -127204,6 +127916,14 @@
           "out": 0.5,
           "cache_read": 0.0125,
           "cache_write": 0.04,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.0232,
+          "out": 1.2,
+          "cache_read": 0.0232,
+          "cache_write": 0.0232,
           "source": "openrouter"
         }
       ]
@@ -128983,6 +129703,14 @@
           "cache_read": 0.29,
           "cache_write": 0.75,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.73,
+          "out": 10,
+          "cache_read": 0.55,
+          "cache_write": 0.73,
+          "source": "openrouter"
         }
       ]
     },
@@ -129385,6 +130113,14 @@
           "out": 10,
           "cache_read": 0.55,
           "cache_write": 0.8,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.73,
+          "out": 10,
+          "cache_read": 0.55,
+          "cache_write": 0.73,
           "source": "openrouter"
         }
       ]
@@ -129855,6 +130591,14 @@
           "out": 0.3,
           "cache_read": 0,
           "cache_write": 0.1,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.18,
+          "out": 0.59,
+          "cache_read": 0,
+          "cache_write": 0.18,
           "source": "openrouter"
         }
       ]
@@ -156987,6 +157731,14 @@
           "cache_read": 0,
           "cache_write": 0.16,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0,
+          "cache_write": 0.15,
+          "source": "vercel"
         }
       ]
     },
@@ -157054,6 +157806,19 @@
           "out": 7.5,
           "cache_read": 0.3,
           "cache_write": 1.5,
+          "tier_threshold": 32001,
+          "tier_in": 2.7,
+          "tier_out": 13.5,
+          "tier_cache_read": 0.54,
+          "tier_cache_write": 2.7,
+          "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.22,
+          "out": 1.8,
+          "cache_read": 0.022,
+          "cache_write": 0.22,
           "tier_threshold": 32001,
           "tier_in": 2.7,
           "tier_out": 13.5,
@@ -157241,6 +158006,14 @@
           "out": 1.6,
           "cache_read": 0,
           "cache_write": 0.4,
+          "source": "vercel"
+        },
+        {
+          "from": "2026-10-12",
+          "in": 0.2,
+          "out": 0.88,
+          "cache_read": 0.11,
+          "cache_write": 0.2,
           "source": "vercel"
         }
       ]
@@ -167365,6 +168138,9 @@
     "shisa-v2-llama3p3-70b": "shisa-v2-llama3.3-70b",
     "shisa-v2.1-llama3.3-70b-latest": "shisa-v2.1-llama3.3-70b",
     "shisa-v2p1-llama3p3-70b": "shisa-v2.1-llama3.3-70b",
+    "skyfall-31b-v4-2": "skyfall-31b-v4.2",
+    "skyfall-31b-v4.2-latest": "skyfall-31b-v4.2",
+    "skyfall-31b-v4p2": "skyfall-31b-v4.2",
     "skyfall-36b-v2-latest": "skyfall-36b-v2",
     "small-latest": "small",
     "smollm3-3b-base-latest": "smollm3-3b-base",
