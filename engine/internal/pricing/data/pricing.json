@@ -21,7 +21,7 @@
     }
   },
   "schema": 2,
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "sources": [
     "https://models.dev/api.json"
   ],
@@ -2223,6 +2223,19 @@
         }
       ]
     },
+    "cat-jam": {
+      "id": "cat-jam",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "vercel"
+        }
+      ]
+    },
     "cat-jam-free": {
       "id": "cat-jam-free",
       "rates": [
@@ -4038,6 +4051,15 @@
           "tier_cache_read": 0.6,
           "tier_cache_write": 7.5,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.989,
+          "out": 14.945,
+          "cache_read": 0.296,
+          "cache_write": 3.707,
+          "cache_write_1h": 5.978,
+          "source": "cortecs"
         }
       ]
     },
@@ -6263,6 +6285,14 @@
           "cache_read": 0.1866,
           "cache_write": 0.8957,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.1,
+          "out": 2.5,
+          "cache_read": 0.04,
+          "cache_write": 1.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -6657,6 +6687,14 @@
           "out": 8,
           "cache_read": 0.23,
           "cache_write": 0.225,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 5,
+          "cache_read": 0.249,
+          "cache_write": 0.25,
           "source": "kilo"
         }
       ]
@@ -7644,6 +7682,14 @@
           "out": 0.99,
           "cache_read": 0.1866,
           "cache_write": 0.8957,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.1,
+          "out": 2.5,
+          "cache_read": 0.04,
+          "cache_write": 1.1,
           "source": "nano-gpt"
         }
       ]
@@ -21592,6 +21638,14 @@
           "cache_read": 0.099,
           "cache_write": 0.441,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.5,
+          "out": 2.6,
+          "cache_read": 0.125,
+          "cache_write": 0.5,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -22816,6 +22870,19 @@
           "cache_read": 0,
           "cache_write": 0.14,
           "source": "siliconflow"
+        }
+      ]
+    },
+    "ll-alpha-free": {
+      "id": "ll-alpha-free",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "opencode"
         }
       ]
     },
@@ -25829,6 +25896,14 @@
           "cache_read": 0,
           "cache_write": 0.33585,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.33624,
+          "out": 0.44832,
+          "cache_read": 0,
+          "cache_write": 0.33624,
+          "source": "edenai"
         }
       ]
     },
@@ -27196,6 +27271,32 @@
         }
       ]
     },
+    "moondream3-preview": {
+      "id": "moondream3-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "kilo"
+        }
+      ]
+    },
+    "moondream3.1-9b-a2b": {
+      "id": "moondream3.1-9b-a2b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "kilo"
+        }
+      ]
+    },
     "moonshot-kimi-k2-instruct": {
       "id": "moonshot-kimi-k2-instruct",
       "rates": [
@@ -27495,6 +27596,19 @@
           "cache_read": 0,
           "cache_write": 0,
           "source": "opencode"
+        }
+      ]
+    },
+    "muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "fireworks-ai"
         }
       ]
     },
@@ -28217,6 +28331,19 @@
         }
       ]
     },
+    "nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 0.5,
+          "cache_read": 0.04,
+          "cache_write": 0.2,
+          "source": "vercel"
+        }
+      ]
+    },
     "nemotron-3.5-super-vl-120b-a12b": {
       "id": "nemotron-3.5-super-vl-120b-a12b",
       "rates": [
@@ -28230,6 +28357,32 @@
         }
       ],
       "first_party": true
+    },
+    "nemotron-3.5-super-vl-free": {
+      "id": "nemotron-3.5-super-vl-free",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "opencode"
+        }
+      ]
+    },
+    "nemotron-3.5-super-vl:free": {
+      "id": "nemotron-3.5-super-vl:free",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "kilo"
+        }
+      ]
     },
     "nemotron-3_5-lightning": {
       "id": "nemotron-3_5-lightning",
@@ -28802,6 +28955,19 @@
         }
       ]
     },
+    "nvidia-nemotron-3-5-super-vl-120b-a12b": {
+      "id": "nvidia-nemotron-3-5-super-vl-120b-a12b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 1.25,
+          "cache_read": 0.125,
+          "cache_write": 0.25,
+          "source": "venice"
+        }
+      ]
+    },
     "nvidia-nemotron-3-nano-30b-a3b": {
       "id": "nvidia-nemotron-3-nano-30b-a3b",
       "rates": [
@@ -28992,6 +29158,19 @@
           "cache_read": 0.5,
           "cache_write": 0.5,
           "source": "pioneer"
+        }
+      ]
+    },
+    "nvidia-nemotron-3.5-super-vl-120b-a12b": {
+      "id": "nvidia-nemotron-3.5-super-vl-120b-a12b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.75,
+          "cache_read": 0.02,
+          "cache_write": 0.15,
+          "source": "wandb"
         }
       ]
     },
@@ -29443,6 +29622,14 @@
           "cache_read": 0,
           "cache_write": 3.125,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.5,
+          "out": 10,
+          "cache_read": 1.25,
+          "cache_write": 2.5,
+          "source": "venice"
         }
       ]
     },
@@ -29468,6 +29655,14 @@
           "out": 0.75,
           "cache_read": 0.09375,
           "cache_write": 0.1875,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.075,
+          "cache_write": 0.15,
           "source": "venice"
         }
       ]
@@ -29719,6 +29914,14 @@
           "cache_read": 0.219,
           "cache_write": 2.19,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
+          "cache_write": 1.75,
+          "source": "venice"
         }
       ]
     },
@@ -29745,6 +29948,14 @@
           "cache_read": 0.219,
           "cache_write": 2.19,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
+          "cache_write": 1.75,
+          "source": "venice"
         }
       ]
     },
@@ -29758,6 +29969,19 @@
           "cache_read": 0.313,
           "cache_write": 3.13,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.5,
+          "out": 15,
+          "cache_read": 0.25,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 5,
+          "tier_out": 22.5,
+          "tier_cache_read": 0.5,
+          "tier_cache_write": 5,
+          "source": "venice"
         }
       ]
     },
@@ -29770,6 +29994,14 @@
           "out": 5.625,
           "cache_read": 0.09375,
           "cache_write": 0.9375,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.75,
+          "out": 4.5,
+          "cache_read": 0.075,
+          "cache_write": 0.75,
           "source": "venice"
         }
       ]
@@ -29787,6 +30019,18 @@
           "tier_in": 75,
           "tier_out": 337.5,
           "tier_cache_write": 75,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 30,
+          "out": 180,
+          "cache_read": 0,
+          "cache_write": 30,
+          "tier_threshold": 272000,
+          "tier_in": 60,
+          "tier_out": 270,
+          "tier_cache_write": 60,
           "source": "venice"
         }
       ]
@@ -29806,6 +30050,19 @@
           "tier_cache_read": 1.25,
           "tier_cache_write": 12.5,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 5,
+          "out": 30,
+          "cache_read": 0.5,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 10,
+          "tier_out": 45,
+          "tier_cache_read": 1,
+          "tier_cache_write": 10,
+          "source": "venice"
         }
       ]
     },
@@ -29818,6 +30075,18 @@
           "out": 225,
           "cache_read": 0,
           "cache_write": 37.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 30,
+          "out": 180,
+          "cache_read": 0,
+          "cache_write": 30,
+          "tier_threshold": 272000,
+          "tier_in": 60,
+          "tier_out": 270,
+          "tier_cache_write": 60,
           "source": "venice"
         }
       ]
@@ -29844,6 +30113,19 @@
           "tier_out": 2.25,
           "tier_cache_read": 0.05,
           "tier_cache_write": 0.625,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tier_threshold": 272000,
+          "tier_in": 0.4,
+          "tier_out": 1.8,
+          "tier_cache_read": 0.04,
+          "tier_cache_write": 0.5,
           "source": "venice"
         }
       ]
@@ -29875,6 +30157,19 @@
           "tier_out": 2.25,
           "tier_cache_read": 0.05,
           "tier_cache_write": 0.625,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tier_threshold": 272000,
+          "tier_in": 0.4,
+          "tier_out": 1.8,
+          "tier_cache_read": 0.04,
+          "tier_cache_write": 0.5,
           "source": "venice"
         }
       ]
@@ -29914,6 +30209,19 @@
           "tier_out": 37.5,
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
+          "tier_cache_write": 10,
           "source": "venice"
         }
       ]
@@ -29959,6 +30267,19 @@
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
+          "tier_cache_write": 10,
+          "source": "venice"
         }
       ]
     },
@@ -29984,6 +30305,19 @@
           "tier_out": 22.5,
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 18,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
           "source": "venice"
         }
       ]
@@ -30015,6 +30349,19 @@
           "tier_out": 22.5,
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 18,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
           "source": "venice"
         }
       ]
@@ -30083,6 +30430,19 @@
           "tier_cache_read": 2.5,
           "tier_cache_write": 31.25,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 10,
+          "out": 50,
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "tier_threshold": 272000,
+          "tier_in": 20,
+          "tier_out": 75,
+          "tier_cache_read": 2,
+          "tier_cache_write": 25,
+          "source": "venice"
         }
       ]
     },
@@ -30137,6 +30497,19 @@
           "tier_cache_read": 0.25,
           "tier_cache_write": 6.25,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 15,
+          "tier_cache_read": 0.2,
+          "tier_cache_write": 5,
+          "source": "venice"
         }
       ]
     },
@@ -30154,6 +30527,19 @@
           "tier_out": 112.5,
           "tier_cache_read": 1.5,
           "tier_cache_write": 37.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 12,
+          "out": 60,
+          "cache_read": 0.6,
+          "cache_write": 15,
+          "tier_threshold": 272000,
+          "tier_in": 24,
+          "tier_out": 90,
+          "tier_cache_read": 1.2,
+          "tier_cache_write": 30,
           "source": "venice"
         }
       ]
@@ -30573,6 +30959,14 @@
           "cache_read": 0.03,
           "cache_write": 0.3,
           "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 0.4,
+          "cache_read": 0.05,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -30996,6 +31390,19 @@
           "cache_read": 0.075,
           "cache_write": 0.15,
           "source": "nano-gpt"
+        }
+      ]
+    },
+    "prism": {
+      "id": "prism",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 3.2664,
+          "out": 16.332,
+          "cache_read": 0.32664,
+          "cache_write": 3.2664,
+          "source": "hyper"
         }
       ]
     },
@@ -39684,6 +40091,19 @@
           "out": 3.75,
           "cache_read": 0,
           "cache_write": 0.75,
+          "source": "302ai"
+        }
+      ]
+    },
+    "302ai\u0000gemini-4-argon": {
+      "id": "gemini-4-argon",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 4,
+          "out": 10,
+          "cache_read": 0.2,
+          "cache_write": 0.375,
           "source": "302ai"
         }
       ]
@@ -54211,6 +54631,19 @@
         }
       ]
     },
+    "ambient\u0000minimax-m3": {
+      "id": "minimax-m3",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.23,
+          "out": 0.96,
+          "cache_read": 0.05,
+          "cache_write": 0,
+          "source": "ambient"
+        }
+      ]
+    },
     "ambient\u0000qwen3-30b-a3b-instruct-2507": {
       "id": "qwen3-30b-a3b-instruct-2507",
       "rates": [
@@ -59499,6 +59932,32 @@
           "out": 3.48,
           "cache_read": 0.145,
           "cache_write": 1.74,
+          "source": "cloudflare-ai-gateway"
+        }
+      ]
+    },
+    "cloudflare-ai-gateway\u0000ember-1": {
+      "id": "ember-1",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 3,
+          "out": 15,
+          "cache_read": 0.3,
+          "cache_write": 3,
+          "source": "cloudflare-ai-gateway"
+        }
+      ]
+    },
+    "cloudflare-ai-gateway\u0000gemini-4-argon": {
+      "id": "gemini-4-argon",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
+          "cache_write": 2,
           "source": "cloudflare-ai-gateway"
         }
       ]
@@ -65966,6 +66425,19 @@
         }
       ]
     },
+    "deepinfra\u0000step-5-preview": {
+      "id": "step-5-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1,
+          "out": 2.7,
+          "cache_read": 0.05,
+          "cache_write": 1,
+          "source": "deepinfra"
+        }
+      ]
+    },
     "deepseek\u0000deepseek-flash": {
       "id": "deepseek-flash",
       "rates": [
@@ -66914,6 +67386,19 @@
           "out": 1.7,
           "cache_read": 0.18,
           "cache_write": 0.9,
+          "source": "digitalocean"
+        }
+      ]
+    },
+    "digitalocean\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 0.65,
+          "cache_read": 0.06,
+          "cache_write": 0.3,
           "source": "digitalocean"
         }
       ]
@@ -70738,6 +71223,14 @@
           "cache_read": 0,
           "cache_write": 1.00755,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.00872,
+          "out": 1.00872,
+          "cache_read": 0,
+          "cache_write": 1.00872,
+          "source": "edenai"
         }
       ]
     },
@@ -71051,6 +71544,14 @@
           "out": 0.4478,
           "cache_read": 0,
           "cache_write": 0.33585,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.33624,
+          "out": 0.44832,
+          "cache_read": 0,
+          "cache_write": 0.33624,
           "source": "edenai"
         }
       ]
@@ -71394,6 +71895,19 @@
         }
       ]
     },
+    "edenai\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 1.25,
+          "cache_write": 1.25,
+          "source": "edenai"
+        }
+      ]
+    },
     "edenai\u0000mythomax-l2-13b": {
       "id": "mythomax-l2-13b",
       "rates": [
@@ -71678,6 +72192,14 @@
           "cache_read": 0,
           "cache_write": 0.839625,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.8406,
+          "out": 2.5218,
+          "cache_read": 0,
+          "cache_write": 0.8406,
+          "source": "edenai"
         }
       ]
     },
@@ -71722,6 +72244,14 @@
           "out": 0.8956,
           "cache_read": 0,
           "cache_write": 0.2239,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.22416,
+          "out": 0.89664,
+          "cache_read": 0,
+          "cache_write": 0.22416,
           "source": "edenai"
         }
       ]
@@ -71801,6 +72331,14 @@
           "out": 0.8956,
           "cache_read": 0,
           "cache_write": 0.167925,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.16812,
+          "out": 0.89664,
+          "cache_read": 0,
+          "cache_write": 0.16812,
           "source": "edenai"
         }
       ]
@@ -74524,6 +75062,19 @@
           "out": 1.5,
           "cache_read": 0.04,
           "cache_write": 0.35,
+          "source": "fireworks-ai"
+        }
+      ]
+    },
+    "fireworks\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
           "source": "fireworks-ai"
         }
       ]
@@ -81685,6 +82236,19 @@
         }
       ]
     },
+    "hyper\u0000prism": {
+      "id": "prism",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 3.2664,
+          "out": 16.332,
+          "cache_read": 0.32664,
+          "cache_write": 3.2664,
+          "source": "hyper"
+        }
+      ]
+    },
     "hyper\u0000qwen3-coder-480b-a35b-instruct-int4-mixed-ar": {
       "id": "qwen3-coder-480b-a35b-instruct-int4-mixed-ar",
       "rates": [
@@ -83994,6 +84558,14 @@
           "cache_read": 0.035,
           "cache_write": 0.34,
           "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.29,
+          "out": 1.16,
+          "cache_read": 0.0058,
+          "cache_write": 0.29,
+          "source": "iteracompute"
         }
       ]
     },
@@ -84006,6 +84578,27 @@
           "out": 3.3,
           "cache_read": 0.11,
           "cache_write": 1.1,
+          "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.89,
+          "out": 2.69,
+          "cache_read": 0.03,
+          "cache_write": 0.89,
+          "source": "iteracompute"
+        }
+      ]
+    },
+    "iteracompute\u0000deepseek-v4.1-flash": {
+      "id": "deepseek-v4.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.29,
+          "out": 1.16,
+          "cache_read": 0.0058,
+          "cache_write": 0.29,
           "source": "iteracompute"
         }
       ]
@@ -84020,6 +84613,14 @@
           "cache_read": 0.26,
           "cache_write": 1.2,
           "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.99,
+          "out": 3.45,
+          "cache_read": 0.245,
+          "cache_write": 0.99,
+          "source": "iteracompute"
         }
       ]
     },
@@ -84032,6 +84633,27 @@
           "out": 0.49,
           "cache_read": 0.03,
           "cache_write": 0.14,
+          "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.099,
+          "out": 0.35,
+          "cache_read": 0.025,
+          "cache_write": 0.099,
+          "source": "iteracompute"
+        }
+      ]
+    },
+    "iteracompute\u0000kimi-k2.7-code": {
+      "id": "kimi-k2.7-code",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.69,
+          "out": 3.29,
+          "cache_read": 0.15,
+          "cache_write": 0.69,
           "source": "iteracompute"
         }
       ]
@@ -84046,6 +84668,14 @@
           "cache_read": 0.29,
           "cache_write": 3,
           "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.39,
+          "out": 11.99,
+          "cache_read": 0.24,
+          "cache_write": 2.39,
+          "source": "iteracompute"
         }
       ]
     },
@@ -84058,6 +84688,14 @@
           "out": 1.2,
           "cache_read": 0.08,
           "cache_write": 0.29,
+          "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.299,
+          "out": 1.19,
+          "cache_read": 0.045,
+          "cache_write": 0.299,
           "source": "iteracompute"
         }
       ]
@@ -84091,6 +84729,14 @@
           "in": 1.95,
           "out": 5.95,
           "cache_read": 0.2,
+          "cache_write": 1.95,
+          "source": "iteracompute"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.95,
+          "out": 5.7,
+          "cache_read": 0.245,
           "cache_write": 1.95,
           "source": "iteracompute"
         }
@@ -86147,6 +86793,19 @@
         }
       ]
     },
+    "kilo\u0000cat-jam": {
+      "id": "cat-jam",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "kilo"
+        }
+      ]
+    },
     "kilo\u0000claude-3-haiku": {
       "id": "claude-3-haiku",
       "rates": [
@@ -86683,6 +87342,14 @@
           "cache_read": 0,
           "cache_write": 0.32,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2574,
+          "out": 1.0287,
+          "cache_read": 0,
+          "cache_write": 0.2574,
+          "source": "kilo"
         }
       ]
     },
@@ -86962,6 +87629,14 @@
           "cache_read": 0.0054,
           "cache_write": 0.02376,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.036,
+          "out": 0.684,
+          "cache_read": 0.0054,
+          "cache_write": 0.036,
+          "source": "kilo"
         }
       ]
     },
@@ -87182,6 +87857,14 @@
           "out": 8,
           "cache_read": 0.23,
           "cache_write": 0.225,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 5,
+          "cache_read": 0.249,
+          "cache_write": 0.25,
           "source": "kilo"
         }
       ]
@@ -87521,6 +88204,14 @@
           "out": 0.576,
           "cache_read": 0.0108,
           "cache_write": 0.0144,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.00999,
+          "out": 1.152,
+          "cache_read": 0.00999,
+          "cache_write": 0.00999,
           "source": "kilo"
         }
       ]
@@ -88251,6 +88942,14 @@
           "cache_read": 0,
           "cache_write": 0.05,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.04,
+          "out": 0.12,
+          "cache_read": 0,
+          "cache_write": 0.04,
+          "source": "kilo"
         }
       ]
     },
@@ -88358,6 +89057,14 @@
           "out": 0.34,
           "cache_read": 0.05,
           "cache_write": 0.09,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 0.34,
+          "cache_read": 0.1,
+          "cache_write": 0.1,
           "source": "kilo"
         }
       ]
@@ -88611,6 +89318,14 @@
           "out": 4.4,
           "cache_read": 0.0223,
           "cache_write": 0.024,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0608,
+          "out": 4.4,
+          "cache_read": 0.0565,
+          "cache_write": 0.0608,
           "source": "kilo"
         }
       ]
@@ -89128,6 +89843,14 @@
           "out": 0.9,
           "cache_read": 0.01125,
           "cache_write": 0.036,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0171,
+          "out": 0.9,
+          "cache_read": 0.01125,
+          "cache_write": 0.0171,
           "source": "kilo"
         }
       ]
@@ -89959,6 +90682,14 @@
           "cache_read": 0.03,
           "cache_write": 0.03,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.03,
+          "out": 0.15,
+          "cache_read": 0.015,
+          "cache_write": 0.03,
+          "source": "kilo"
         }
       ]
     },
@@ -90401,6 +91132,14 @@
           "cache_read": 0.041,
           "cache_write": 0.83,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.801,
+          "out": 2.48,
+          "cache_read": 0.038,
+          "cache_write": 0.801,
+          "source": "kilo"
         }
       ]
     },
@@ -90763,6 +91502,14 @@
           "out": 14,
           "cache_read": 0.3,
           "cache_write": 0.3,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.294,
+          "out": 24,
+          "cache_read": 0.284,
+          "cache_write": 0.294,
           "source": "kilo"
         }
       ]
@@ -91386,6 +92133,14 @@
           "cache_read": 0,
           "cache_write": 0.1,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.08,
+          "out": 0.24,
+          "cache_read": 0,
+          "cache_write": 0.08,
+          "source": "kilo"
         }
       ]
     },
@@ -91398,6 +92153,14 @@
           "out": 0.18,
           "cache_read": 0,
           "cache_write": 0.18,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.144,
+          "out": 0.144,
+          "cache_read": 0,
+          "cache_write": 0.144,
           "source": "kilo"
         }
       ]
@@ -92079,6 +92842,32 @@
         }
       ]
     },
+    "kilo\u0000moondream3-preview": {
+      "id": "moondream3-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "kilo"
+        }
+      ]
+    },
+    "kilo\u0000moondream3.1-9b-a2b": {
+      "id": "moondream3.1-9b-a2b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "kilo"
+        }
+      ]
+    },
     "kilo\u0000morph-v3-fast": {
       "id": "morph-v3-fast",
       "rates": [
@@ -92187,6 +92976,19 @@
           "out": 0.2,
           "cache_read": 0.002,
           "cache_write": 0.1,
+          "source": "kilo"
+        }
+      ]
+    },
+    "kilo\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
           "source": "kilo"
         }
       ]
@@ -92332,6 +93134,14 @@
           "cache_read": 0.1,
           "cache_write": 0.5,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.4,
+          "out": 1.76,
+          "cache_read": 0.08,
+          "cache_write": 0.4,
+          "source": "kilo"
         }
       ]
     },
@@ -92416,6 +93226,32 @@
       "rates": [
         {
           "from": "2026-10-08",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "kilo"
+        }
+      ]
+    },
+    "kilo\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 0.4,
+          "cache_read": 0.08,
+          "cache_write": 0.1,
+          "source": "kilo"
+        }
+      ]
+    },
+    "kilo\u0000nemotron-3.5-super-vl:free": {
+      "id": "nemotron-3.5-super-vl:free",
+      "rates": [
+        {
+          "from": "2026-10-16",
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -92801,6 +93637,14 @@
           "cache_read": 0,
           "cache_write": 0.07,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.056,
+          "out": 0.112,
+          "cache_read": 0,
+          "cache_write": 0.056,
+          "source": "kilo"
         }
       ]
     },
@@ -93179,6 +94023,14 @@
           "out": 1.1,
           "cache_read": 0.07,
           "cache_write": 0.1,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.09,
+          "out": 1.1,
+          "cache_read": 0,
+          "cache_write": 0.09,
           "source": "kilo"
         }
       ]
@@ -94091,6 +94943,14 @@
           "in": 1,
           "out": 2.7,
           "cache_read": 0.05,
+          "cache_write": 1,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1,
+          "out": 2.7,
+          "cache_read": 0.1,
           "cache_write": 1,
           "source": "kilo"
         }
@@ -103315,6 +104175,14 @@
           "cache_read": 0.007,
           "cache_write": 0.035,
           "source": "merge-gateway"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.1125,
+          "source": "merge-gateway"
         }
       ]
     },
@@ -105137,6 +106005,19 @@
         }
       ]
     },
+    "merge-gateway\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "merge-gateway"
+        }
+      ]
+    },
     "merge-gateway\u0000nemotron-3-nano-30b-a3b": {
       "id": "nemotron-3-nano-30b-a3b",
       "rates": [
@@ -105481,6 +106362,14 @@
           "cache_read": 0.0288,
           "cache_write": 0.144,
           "source": "merge-gateway"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 1.1,
+          "cache_read": 0.05,
+          "cache_write": 0.1,
+          "source": "merge-gateway"
         }
       ]
     },
@@ -105507,6 +106396,14 @@
           "cache_read": 0.15785,
           "cache_write": 0.287,
           "source": "merge-gateway"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.21,
+          "out": 1.9,
+          "cache_read": 0.105,
+          "cache_write": 0.21,
+          "source": "merge-gateway"
         }
       ]
     },
@@ -105532,6 +106429,14 @@
           "out": 0.43,
           "cache_read": 0.0216,
           "cache_write": 0.108,
+          "source": "merge-gateway"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.0216,
+          "cache_write": 0.15,
           "source": "merge-gateway"
         }
       ]
@@ -109490,6 +110395,14 @@
           "cache_read": 0.1866,
           "cache_write": 0.8957,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.1,
+          "out": 2.5,
+          "cache_read": 0.04,
+          "cache_write": 1.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -109968,6 +110881,14 @@
           "cache_read": 0.1866,
           "cache_write": 0.8957,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.1,
+          "out": 2.5,
+          "cache_read": 0.04,
+          "cache_write": 1.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -109996,6 +110917,14 @@
           "out": 0.99,
           "cache_read": 0.1866,
           "cache_write": 0.8957,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.1,
+          "out": 2.5,
+          "cache_read": 0.04,
+          "cache_write": 1.1,
           "source": "nano-gpt"
         }
       ]
@@ -110301,6 +111230,19 @@
           "out": 0.493,
           "cache_read": 0.2465,
           "cache_write": 0.493,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000ember-1": {
+      "id": "ember-1",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 3,
+          "out": 15,
+          "cache_read": 0.3,
+          "cache_write": 3,
           "source": "nano-gpt"
         }
       ]
@@ -111625,6 +112567,19 @@
           "out": 0.45,
           "cache_read": 0.05,
           "cache_write": 0.1,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000gemma-sea-lion-v4-27b-it": {
+      "id": "gemma-sea-lion-v4-27b-it",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.24,
+          "out": 0.48,
+          "cache_read": 0,
+          "cache_write": 0.24,
           "source": "nano-gpt"
         }
       ]
@@ -114351,6 +115306,14 @@
           "cache_read": 0.099,
           "cache_write": 0.441,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.5,
+          "out": 2.6,
+          "cache_read": 0.125,
+          "cache_write": 0.5,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -114371,6 +115334,14 @@
           "out": 2.45,
           "cache_read": 0.099,
           "cache_write": 0.441,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.5,
+          "out": 2.6,
+          "cache_read": 0.125,
+          "cache_write": 0.5,
           "source": "nano-gpt"
         }
       ]
@@ -115832,6 +116803,19 @@
         }
       ]
     },
+    "nano-gpt\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "nano-gpt"
+        }
+      ]
+    },
     "nano-gpt\u0000mythomax-l2-13b": {
       "id": "mythomax-l2-13b",
       "rates": [
@@ -115984,6 +116968,19 @@
           "out": 0.2,
           "cache_read": 0.01,
           "cache_write": 0.05,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.5,
+          "cache_read": 0.02,
+          "cache_write": 0.15,
           "source": "nano-gpt"
         }
       ]
@@ -116788,6 +117785,14 @@
           "out": 1.1,
           "cache_read": 0.075,
           "cache_write": 0.09,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 1.1,
+          "cache_read": 0.07,
+          "cache_write": 0.1,
           "source": "nano-gpt"
         }
       ]
@@ -117795,6 +118800,32 @@
           "out": 0.5,
           "cache_read": 0.25,
           "cache_write": 0.5,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000reka-edge-2603": {
+      "id": "reka-edge-2603",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.105,
+          "out": 0.105,
+          "cache_read": 0,
+          "cache_write": 0.105,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000reka-flash-3": {
+      "id": "reka-flash-3",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.105,
+          "out": 0.21,
+          "cache_read": 0,
+          "cache_write": 0.105,
           "source": "nano-gpt"
         }
       ]
@@ -119600,6 +120631,19 @@
         }
       ]
     },
+    "nebius\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 1.25,
+          "cache_write": 1.25,
+          "source": "nebius"
+        }
+      ]
+    },
     "nebius\u0000nemotron-3-nano-omni": {
       "id": "nemotron-3-nano-omni",
       "rates": [
@@ -119635,6 +120679,19 @@
           "out": 3,
           "cache_read": 1,
           "cache_write": 1,
+          "source": "nebius"
+        }
+      ]
+    },
+    "nebius\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 0.9,
+          "cache_read": 0.3,
+          "cache_write": 0.3,
           "source": "nebius"
         }
       ]
@@ -127037,6 +128094,19 @@
         }
       ]
     },
+    "ollama-cloud\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "ollama-cloud"
+        }
+      ]
+    },
     "ollama-cloud\u0000nemotron-3-nano": {
       "id": "nemotron-3-nano",
       "rates": [
@@ -128442,6 +129512,19 @@
         }
       ]
     },
+    "opencode\u0000glm-5.3-flash-free": {
+      "id": "glm-5.3-flash-free",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "opencode"
+        }
+      ]
+    },
     "opencode\u0000gpt-5": {
       "id": "gpt-5",
       "rates": [
@@ -129139,6 +130222,19 @@
         }
       ]
     },
+    "opencode\u0000ll-alpha-free": {
+      "id": "ll-alpha-free",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "opencode"
+        }
+      ]
+    },
     "opencode\u0000longcat-2.0-free": {
       "id": "longcat-2.0-free",
       "rates": [
@@ -129417,6 +130513,19 @@
       "rates": [
         {
           "from": "2026-08-27",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "opencode"
+        }
+      ]
+    },
+    "opencode\u0000nemotron-3.5-super-vl-free": {
+      "id": "nemotron-3.5-super-vl-free",
+      "rates": [
+        {
+          "from": "2026-10-16",
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -130304,6 +131413,19 @@
         }
       ]
     },
+    "opencode-go\u0000step-5-preview": {
+      "id": "step-5-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1,
+          "out": 2.7,
+          "cache_read": 0.1,
+          "cache_write": 1,
+          "source": "opencode-go"
+        }
+      ]
+    },
     "opencode-go\u0000step-5-preview-free": {
       "id": "step-5-preview-free",
       "rates": [
@@ -131044,6 +132166,14 @@
           "cache_read": 0,
           "cache_write": 0.32,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2574,
+          "out": 1.0287,
+          "cache_read": 0,
+          "cache_write": 0.2574,
+          "source": "openrouter"
         }
       ]
     },
@@ -131315,6 +132445,14 @@
           "cache_read": 0.0054,
           "cache_write": 0.02376,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.036,
+          "out": 0.684,
+          "cache_read": 0.0054,
+          "cache_write": 0.036,
+          "source": "openrouter"
         }
       ]
     },
@@ -131535,6 +132673,14 @@
           "out": 8,
           "cache_read": 0.23,
           "cache_write": 0.225,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 5,
+          "cache_read": 0.249,
+          "cache_write": 0.25,
           "source": "openrouter"
         }
       ]
@@ -131883,6 +133029,14 @@
           "cache_read": 0.0108,
           "cache_write": 0.0144,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.00999,
+          "out": 1.152,
+          "cache_read": 0.00999,
+          "cache_write": 0.00999,
+          "source": "openrouter"
         }
       ]
     },
@@ -132055,6 +133209,14 @@
           "out": 0.64,
           "cache_read": 0.016,
           "cache_write": 0.016,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0111,
+          "out": 1.28,
+          "cache_read": 0.0111,
+          "cache_write": 0.0111,
           "source": "openrouter"
         }
       ]
@@ -132612,6 +133774,14 @@
           "cache_read": 0.0054,
           "cache_write": 0.02376,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.036,
+          "out": 0.684,
+          "cache_read": 0.0054,
+          "cache_write": 0.036,
+          "source": "openrouter"
         }
       ]
     },
@@ -133077,6 +134247,14 @@
           "in": 0.75,
           "out": 3.75,
           "cache_read": 0.075,
+          "cache_write": 0.041667,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.825,
+          "out": 4.125,
+          "cache_read": 0.0825,
           "cache_write": 0.041667,
           "source": "openrouter"
         }
@@ -133553,6 +134731,14 @@
           "out": 4.4,
           "cache_read": 0.0223,
           "cache_write": 0.024,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0608,
+          "out": 4.4,
+          "cache_read": 0.0565,
+          "cache_write": 0.0608,
           "source": "openrouter"
         }
       ]
@@ -134033,6 +135219,14 @@
           "cache_read": 0.019,
           "cache_write": 0.02,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.037,
+          "out": 9,
+          "cache_read": 0.036,
+          "cache_write": 0.037,
+          "source": "openrouter"
         }
       ]
     },
@@ -134190,6 +135384,14 @@
           "cache_read": 0.029,
           "cache_write": 0.03,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.079,
+          "out": 4.8,
+          "cache_read": 0.078,
+          "cache_write": 0.079,
+          "source": "openrouter"
         }
       ]
     },
@@ -134314,6 +135516,14 @@
           "out": 0.5,
           "cache_read": 0.03,
           "cache_write": 0.15,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0171,
+          "out": 0.9,
+          "cache_read": 0.01125,
+          "cache_write": 0.0171,
           "source": "openrouter"
         }
       ]
@@ -134534,6 +135744,14 @@
           "out": 0.9,
           "cache_read": 0.01125,
           "cache_write": 0.036,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.0171,
+          "out": 0.9,
+          "cache_read": 0.01125,
+          "cache_write": 0.0171,
           "source": "openrouter"
         }
       ]
@@ -136387,6 +137605,14 @@
           "cache_read": 0.3,
           "cache_write": 0.3,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.294,
+          "out": 24,
+          "cache_read": 0.284,
+          "cache_write": 0.294,
+          "source": "openrouter"
         }
       ]
     },
@@ -136813,6 +138039,14 @@
           "out": 15,
           "cache_read": 0.28,
           "cache_write": 0.45,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.304,
+          "out": 11.936,
+          "cache_read": 0.21,
+          "cache_write": 0.304,
           "source": "openrouter"
         }
       ]
@@ -137246,6 +138480,14 @@
           "out": 0.79,
           "cache_read": 0.295,
           "cache_write": 0.59,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 0.32,
+          "cache_read": 0,
+          "cache_write": 0.1,
           "source": "openrouter"
         }
       ]
@@ -137991,6 +139233,14 @@
           "cache_read": 0,
           "cache_write": 0.075,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.09375,
+          "out": 0.25,
+          "cache_read": 0,
+          "cache_write": 0.09375,
+          "source": "openrouter"
         }
       ]
     },
@@ -138003,6 +139253,32 @@
           "out": 6,
           "cache_read": 0.2,
           "cache_write": 2,
+          "source": "openrouter"
+        }
+      ]
+    },
+    "openrouter\u0000moondream3-preview": {
+      "id": "moondream3-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "openrouter"
+        }
+      ]
+    },
+    "openrouter\u0000moondream3.1-9b-a2b": {
+      "id": "moondream3.1-9b-a2b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.3,
+          "out": 2.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
           "source": "openrouter"
         }
       ]
@@ -138163,6 +139439,19 @@
           "out": 0.2,
           "cache_read": 0.002,
           "cache_write": 0.1,
+          "source": "openrouter"
+        }
+      ]
+    },
+    "openrouter\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
           "source": "openrouter"
         }
       ]
@@ -138424,6 +139713,32 @@
       "rates": [
         {
           "from": "2026-10-08",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "openrouter"
+        }
+      ]
+    },
+    "openrouter\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.5,
+          "cache_read": 0.02,
+          "cache_write": 0.15,
+          "source": "openrouter"
+        }
+      ]
+    },
+    "openrouter\u0000nemotron-3.5-super-vl:free": {
+      "id": "nemotron-3.5-super-vl:free",
+      "rates": [
+        {
+          "from": "2026-10-16",
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -139299,6 +140614,14 @@
           "cache_read": 0.07,
           "cache_write": 0.1,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.09,
+          "out": 1.1,
+          "cache_read": 0,
+          "cache_write": 0.09,
+          "source": "openrouter"
         }
       ]
     },
@@ -139767,6 +141090,14 @@
           "out": 3.2,
           "cache_read": 0,
           "cache_write": 0.32,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 2,
+          "cache_read": 0.025,
+          "cache_write": 0.25,
           "source": "openrouter"
         }
       ]
@@ -140482,6 +141813,14 @@
           "in": 1,
           "out": 2.7,
           "cache_read": 0.05,
+          "cache_write": 1,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1,
+          "out": 2.7,
+          "cache_read": 0.1,
           "cache_write": 1,
           "source": "openrouter"
         }
@@ -147086,6 +148425,20 @@
         }
       ]
     },
+    "prime\u0000claude-sonnet-5.5": {
+      "id": "claude-sonnet-5.5",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0,
+          "cache_write": 2.5,
+          "cache_write_1h": 4,
+          "source": "prime"
+        }
+      ]
+    },
     "prime\u0000deepseek-v4-flash": {
       "id": "deepseek-v4-flash",
       "rates": [
@@ -147771,6 +149124,19 @@
           "out": 6.6,
           "cache_read": 0,
           "cache_write": 2.2,
+          "source": "prime"
+        }
+      ]
+    },
+    "prime\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0,
+          "cache_write": 1.25,
           "source": "prime"
         }
       ]
@@ -151745,6 +153111,19 @@
       "rates": [
         {
           "from": "2026-10-14",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "requesty"
+        }
+      ]
+    },
+    "requesty\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
           "in": 1.25,
           "out": 4.25,
           "cache_read": 0.15,
@@ -160406,6 +161785,19 @@
         }
       ]
     },
+    "venice\u0000hy4-preview": {
+      "id": "hy4-preview",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.0425,
+          "out": 3.12625,
+          "cache_read": 0.0525,
+          "cache_write": 1.0425,
+          "source": "venice"
+        }
+      ]
+    },
     "venice\u0000inkling": {
       "id": "inkling",
       "rates": [
@@ -160609,6 +162001,45 @@
         }
       ]
     },
+    "venice\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.5625,
+          "out": 5.3125,
+          "cache_read": 0.1875,
+          "cache_write": 1.5625,
+          "source": "venice"
+        }
+      ]
+    },
+    "venice\u0000muse-wonder": {
+      "id": "muse-wonder",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 5,
+          "out": 25,
+          "cache_read": 0.25,
+          "cache_write": 5,
+          "source": "venice"
+        }
+      ]
+    },
+    "venice\u0000nvidia-nemotron-3-5-super-vl-120b-a12b": {
+      "id": "nvidia-nemotron-3-5-super-vl-120b-a12b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.25,
+          "out": 1.25,
+          "cache_read": 0.125,
+          "cache_write": 0.25,
+          "source": "venice"
+        }
+      ]
+    },
     "venice\u0000nvidia-nemotron-3-nano-30b-a3b": {
       "id": "nvidia-nemotron-3-nano-30b-a3b",
       "rates": [
@@ -160658,6 +162089,14 @@
           "cache_read": 0,
           "cache_write": 3.125,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.5,
+          "out": 10,
+          "cache_read": 1.25,
+          "cache_write": 2.5,
+          "source": "venice"
         }
       ]
     },
@@ -160671,6 +162110,14 @@
           "cache_read": 0.09375,
           "cache_write": 0.1875,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.075,
+          "cache_write": 0.15,
+          "source": "venice"
         }
       ]
     },
@@ -160683,6 +162130,14 @@
           "out": 17.5,
           "cache_read": 0.219,
           "cache_write": 2.19,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
+          "cache_write": 1.75,
           "source": "venice"
         }
       ]
@@ -160710,6 +162165,14 @@
           "cache_read": 0.219,
           "cache_write": 2.19,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
+          "cache_write": 1.75,
+          "source": "venice"
         }
       ]
     },
@@ -160723,6 +162186,19 @@
           "cache_read": 0.313,
           "cache_write": 3.13,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2.5,
+          "out": 15,
+          "cache_read": 0.25,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 5,
+          "tier_out": 22.5,
+          "tier_cache_read": 0.5,
+          "tier_cache_write": 5,
+          "source": "venice"
         }
       ]
     },
@@ -160735,6 +162211,14 @@
           "out": 5.625,
           "cache_read": 0.09375,
           "cache_write": 0.9375,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.75,
+          "out": 4.5,
+          "cache_read": 0.075,
+          "cache_write": 0.75,
           "source": "venice"
         }
       ]
@@ -160752,6 +162236,18 @@
           "tier_in": 75,
           "tier_out": 337.5,
           "tier_cache_write": 75,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 30,
+          "out": 180,
+          "cache_read": 0,
+          "cache_write": 30,
+          "tier_threshold": 272000,
+          "tier_in": 60,
+          "tier_out": 270,
+          "tier_cache_write": 60,
           "source": "venice"
         }
       ]
@@ -160771,6 +162267,19 @@
           "tier_cache_read": 1.25,
           "tier_cache_write": 12.5,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 5,
+          "out": 30,
+          "cache_read": 0.5,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 10,
+          "tier_out": 45,
+          "tier_cache_read": 1,
+          "tier_cache_write": 10,
+          "source": "venice"
         }
       ]
     },
@@ -160783,6 +162292,18 @@
           "out": 225,
           "cache_read": 0,
           "cache_write": 37.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 30,
+          "out": 180,
+          "cache_read": 0,
+          "cache_write": 30,
+          "tier_threshold": 272000,
+          "tier_in": 60,
+          "tier_out": 270,
+          "tier_cache_write": 60,
           "source": "venice"
         }
       ]
@@ -160809,6 +162330,19 @@
           "tier_out": 2.25,
           "tier_cache_read": 0.05,
           "tier_cache_write": 0.625,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tier_threshold": 272000,
+          "tier_in": 0.4,
+          "tier_out": 1.8,
+          "tier_cache_read": 0.04,
+          "tier_cache_write": 0.5,
           "source": "venice"
         }
       ]
@@ -160840,6 +162374,19 @@
           "tier_out": 2.25,
           "tier_cache_read": 0.05,
           "tier_cache_write": 0.625,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tier_threshold": 272000,
+          "tier_in": 0.4,
+          "tier_out": 1.8,
+          "tier_cache_read": 0.04,
+          "tier_cache_write": 0.5,
           "source": "venice"
         }
       ]
@@ -160879,6 +162426,19 @@
           "tier_out": 37.5,
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
+          "tier_cache_write": 10,
           "source": "venice"
         }
       ]
@@ -160924,6 +162484,19 @@
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
+          "tier_cache_write": 10,
+          "source": "venice"
         }
       ]
     },
@@ -160949,6 +162522,19 @@
           "tier_out": 22.5,
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 18,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
           "source": "venice"
         }
       ]
@@ -160980,6 +162566,19 @@
           "tier_out": 22.5,
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 18,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
           "source": "venice"
         }
       ]
@@ -161017,6 +162616,19 @@
           "tier_cache_read": 2.5,
           "tier_cache_write": 31.25,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 10,
+          "out": 50,
+          "cache_read": 1,
+          "cache_write": 12.5,
+          "tier_threshold": 272000,
+          "tier_in": 20,
+          "tier_out": 75,
+          "tier_cache_read": 2,
+          "tier_cache_write": 25,
+          "source": "venice"
         }
       ]
     },
@@ -161034,6 +162646,19 @@
           "tier_out": 0.9375,
           "tier_cache_read": 0.025,
           "tier_cache_write": 0.3125,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.1,
+          "out": 0.5,
+          "cache_read": 0.01,
+          "cache_write": 0.125,
+          "tier_threshold": 272000,
+          "tier_in": 0.2,
+          "tier_out": 0.75,
+          "tier_cache_read": 0.02,
+          "tier_cache_write": 0.25,
           "source": "venice"
         }
       ]
@@ -161053,6 +162678,19 @@
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 15,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
+          "source": "venice"
         }
       ]
     },
@@ -161071,6 +162709,19 @@
           "tier_cache_read": 0.25,
           "tier_cache_write": 6.25,
           "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 15,
+          "tier_cache_read": 0.2,
+          "tier_cache_write": 5,
+          "source": "venice"
         }
       ]
     },
@@ -161088,6 +162739,19 @@
           "tier_out": 112.5,
           "tier_cache_read": 1.5,
           "tier_cache_write": 37.5,
+          "source": "venice"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 12,
+          "out": 60,
+          "cache_read": 0.6,
+          "cache_write": 15,
+          "tier_threshold": 272000,
+          "tier_in": 24,
+          "tier_out": 90,
+          "tier_cache_read": 1.2,
+          "tier_cache_write": 30,
           "source": "venice"
         }
       ]
@@ -161582,6 +163246,19 @@
           "out": 30,
           "cache_read": 0.6,
           "cache_write": 7.5,
+          "source": "vercel"
+        }
+      ]
+    },
+    "vercel\u0000cat-jam": {
+      "id": "cat-jam",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
           "source": "vercel"
         }
       ]
@@ -165575,6 +167252,19 @@
         }
       ]
     },
+    "vercel\u0000muse-spark-open": {
+      "id": "muse-spark-open",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 1.25,
+          "out": 4.25,
+          "cache_read": 0.15,
+          "cache_write": 1.25,
+          "source": "vercel"
+        }
+      ]
+    },
     "vercel\u0000muse-wonder-1.0": {
       "id": "muse-wonder-1.0",
       "rates": [
@@ -165678,6 +167368,19 @@
           "out": 0,
           "cache_read": 0,
           "cache_write": 0,
+          "source": "vercel"
+        }
+      ]
+    },
+    "vercel\u0000nemotron-3.5-super-vl": {
+      "id": "nemotron-3.5-super-vl",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.2,
+          "out": 0.5,
+          "cache_read": 0.04,
+          "cache_write": 0.2,
           "source": "vercel"
         }
       ]
@@ -168454,6 +170157,14 @@
           "cache_read": 0.006,
           "cache_write": 0.15,
           "source": "wandb"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.65,
+          "cache_read": 0.002,
+          "cache_write": 0.15,
+          "source": "wandb"
         }
       ]
     },
@@ -168520,6 +170231,14 @@
           "in": 0.15,
           "out": 0.5,
           "cache_read": 0.029,
+          "cache_write": 0.15,
+          "source": "wandb"
+        },
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.5,
+          "cache_read": 0.02,
           "cache_write": 0.15,
           "source": "wandb"
         }
@@ -168719,6 +170438,19 @@
           "out": 0.2,
           "cache_read": 0.04,
           "cache_write": 0.07,
+          "source": "wandb"
+        }
+      ]
+    },
+    "wandb\u0000nvidia-nemotron-3.5-super-vl-120b-a12b": {
+      "id": "nvidia-nemotron-3.5-super-vl-120b-a12b",
+      "rates": [
+        {
+          "from": "2026-10-16",
+          "in": 0.15,
+          "out": 0.75,
+          "cache_read": 0.02,
+          "cache_write": 0.15,
           "source": "wandb"
         }
       ]
@@ -172670,6 +174402,7 @@
     "ca.amazon.nova-lite-v1-latest": "ca.amazon.nova-lite-v1",
     "capamazonpnova-lite-v1": "ca.amazon.nova-lite-v1",
     "cat-jam-free-latest": "cat-jam-free",
+    "cat-jam-latest": "cat-jam",
     "celeris-1-latest": "celeris-1",
     "cerebras-llama-4-maverick-17b-128e-instruct-latest": "cerebras-llama-4-maverick-17b-128e-instruct",
     "cerebras-llama-4-scout-17b-16e-instruct-latest": "cerebras-llama-4-scout-17b-16e-instruct",
@@ -174948,6 +176681,7 @@
     "ling-flash-2-0": "ling-flash-2.0",
     "ling-flash-2.0-latest": "ling-flash-2.0",
     "ling-flash-2p0": "ling-flash-2.0",
+    "ll-alpha-free-latest": "ll-alpha-free",
     "llama-3-05-nemotron-tenyxchat-storybreaker-70b": "llama-3.05-nemotron-tenyxchat-storybreaker-70b",
     "llama-3-05-nt-storybreaker-ministral-70b": "llama-3.05-nt-storybreaker-ministral-70b",
     "llama-3-1-405b-instruct": "llama-3.1-405b-instruct",
@@ -175469,6 +177203,10 @@
     "mn-12b-mag-mell-r1-latest": "mn-12b-mag-mell-r1",
     "mn-loosecannon-12b-v1-latest": "mn-loosecannon-12b-v1",
     "model-router-latest": "model-router",
+    "moondream3-1-9b-a2b": "moondream3.1-9b-a2b",
+    "moondream3-preview-latest": "moondream3-preview",
+    "moondream3.1-9b-a2b-latest": "moondream3.1-9b-a2b",
+    "moondream3p1-9b-a2b": "moondream3.1-9b-a2b",
     "moonshot-kimi-k2-instruct-latest": "moonshot-kimi-k2-instruct",
     "moonshot-kimi-k2-thinking": "moonshot.kimi-k2-thinking",
     "moonshot.kimi-k2-thinking-latest": "moonshot.kimi-k2-thinking",
@@ -175510,6 +177248,7 @@
     "muse-spark-1p3": "muse-spark-1.3",
     "muse-spark-1p3-contributor": "muse-spark-1.3-contributor",
     "muse-spark-1p3-contributor-free": "muse-spark-1.3-contributor-free",
+    "muse-spark-open-latest": "muse-spark-open",
     "muse-wonder-1-0": "muse-wonder-1.0",
     "muse-wonder-1.0-latest": "muse-wonder-1.0",
     "muse-wonder-1p0": "muse-wonder-1.0",
@@ -175532,7 +177271,10 @@
     "nemotron-3-5-lightning-free": "nemotron-3.5-lightning-free",
     "nemotron-3-5-lightning:free": "nemotron-3.5-lightning:free",
     "nemotron-3-5-lightning:thinking": "nemotron-3.5-lightning:thinking",
+    "nemotron-3-5-super-vl": "nemotron-3.5-super-vl",
     "nemotron-3-5-super-vl-120b-a12b": "nemotron-3.5-super-vl-120b-a12b",
+    "nemotron-3-5-super-vl-free": "nemotron-3.5-super-vl-free",
+    "nemotron-3-5-super-vl:free": "nemotron-3.5-super-vl:free",
     "nemotron-3-content-safety-latest": "nemotron-3-content-safety",
     "nemotron-3-nano-30b-a3b-latest": "nemotron-3-nano-30b-a3b",
     "nemotron-3-nano-latest": "nemotron-3-nano",
@@ -175568,6 +177310,9 @@
     "nemotron-3.5-lightning:free-latest": "nemotron-3.5-lightning:free",
     "nemotron-3.5-lightning:thinking-latest": "nemotron-3.5-lightning:thinking",
     "nemotron-3.5-super-vl-120b-a12b-latest": "nemotron-3.5-super-vl-120b-a12b",
+    "nemotron-3.5-super-vl-free-latest": "nemotron-3.5-super-vl-free",
+    "nemotron-3.5-super-vl-latest": "nemotron-3.5-super-vl",
+    "nemotron-3.5-super-vl:free-latest": "nemotron-3.5-super-vl:free",
     "nemotron-3_5-lightning-latest": "nemotron-3_5-lightning",
     "nemotron-3p5-content-safety": "nemotron-3.5-content-safety",
     "nemotron-3p5-content-safety-free": "nemotron-3.5-content-safety-free",
@@ -175577,7 +177322,10 @@
     "nemotron-3p5-lightning-free": "nemotron-3.5-lightning-free",
     "nemotron-3p5-lightning:free": "nemotron-3.5-lightning:free",
     "nemotron-3p5-lightning:thinking": "nemotron-3.5-lightning:thinking",
+    "nemotron-3p5-super-vl": "nemotron-3.5-super-vl",
     "nemotron-3p5-super-vl-120b-a12b": "nemotron-3.5-super-vl-120b-a12b",
+    "nemotron-3p5-super-vl-free": "nemotron-3.5-super-vl-free",
+    "nemotron-3p5-super-vl:free": "nemotron-3.5-super-vl:free",
     "nemotron-cascade-2-30b-a3b-latest": "nemotron-cascade-2-30b-a3b",
     "nemotron-content-safety-reasoning-4b-latest": "nemotron-content-safety-reasoning-4b",
     "nemotron-lightning-3-5-30b-a3b": "nemotron-lightning-3.5-30b-a3b",
@@ -175633,6 +177381,7 @@
     "nvidia--llama-3p2-nv-embedqa-1b": "nvidia--llama-3.2-nv-embedqa-1b",
     "nvidia-nemotron-3-5-lightning-30b-a3b": "nvidia-nemotron-3.5-lightning-30b-a3b",
     "nvidia-nemotron-3-5-lightning-30b-a3b-bf16": "nvidia-nemotron-3.5-lightning-30b-a3b-bf16",
+    "nvidia-nemotron-3-5-super-vl-120b-a12b-latest": "nvidia-nemotron-3-5-super-vl-120b-a12b",
     "nvidia-nemotron-3-nano-30b-a3b-bf16-latest": "nvidia-nemotron-3-nano-30b-a3b-bf16",
     "nvidia-nemotron-3-nano-30b-a3b-fp8-latest": "nvidia-nemotron-3-nano-30b-a3b-fp8",
     "nvidia-nemotron-3-nano-30b-a3b-latest": "nvidia-nemotron-3-nano-30b-a3b",
@@ -175645,8 +177394,10 @@
     "nvidia-nemotron-3-ultra-latest": "nvidia-nemotron-3-ultra",
     "nvidia-nemotron-3.5-lightning-30b-a3b-bf16-latest": "nvidia-nemotron-3.5-lightning-30b-a3b-bf16",
     "nvidia-nemotron-3.5-lightning-30b-a3b-latest": "nvidia-nemotron-3.5-lightning-30b-a3b",
+    "nvidia-nemotron-3.5-super-vl-120b-a12b-latest": "nvidia-nemotron-3.5-super-vl-120b-a12b",
     "nvidia-nemotron-3p5-lightning-30b-a3b": "nvidia-nemotron-3.5-lightning-30b-a3b",
     "nvidia-nemotron-3p5-lightning-30b-a3b-bf16": "nvidia-nemotron-3.5-lightning-30b-a3b-bf16",
+    "nvidia-nemotron-3p5-super-vl-120b-a12b": "nvidia-nemotron-3.5-super-vl-120b-a12b",
     "nvidia-nemotron-nano-12b-v2": "nvidia.nemotron-nano-12b-v2",
     "nvidia-nemotron-nano-3-30b": "nvidia.nemotron-nano-3-30b",
     "nvidia-nemotron-nano-9b-v2-latest": "nvidia-nemotron-nano-9b-v2",
@@ -175848,6 +177599,7 @@
     "pixtral-large-2502-latest": "pixtral-large-2502",
     "pixtral-large-latest": "pixtral-large",
     "pokee-isaac-latest": "pokee-isaac",
+    "prism-latest": "prism",
     "qvq-max-latest": "qvq-max",
     "qwen-2-5-72b-instruct": "qwen-2.5-72b-instruct",
     "qwen-2-5-7b-instruct": "qwen-2.5-7b-instruct",
