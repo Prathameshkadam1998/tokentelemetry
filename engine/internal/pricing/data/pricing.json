@@ -21,7 +21,7 @@
     }
   },
   "schema": 2,
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "sources": [
     "https://models.dev/api.json"
   ],
@@ -2268,7 +2268,8 @@
           "cache_write": 0.5,
           "source": "edenai"
         }
-      ]
+      ],
+      "first_party": true
     },
     "ca.amazon.nova-lite-v1": {
       "id": "ca.amazon.nova-lite-v1",
@@ -6818,6 +6819,14 @@
           "cache_read": 0.00714,
           "cache_write": 0.2244,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.225,
+          "out": 8,
+          "cache_read": 0.23,
+          "cache_write": 0.225,
+          "source": "kilo"
         }
       ]
     },
@@ -7472,6 +7481,14 @@
           "cache_read": 0.04,
           "cache_write": 0.2,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.44,
+          "out": 1.32,
+          "cache_read": 0.088,
+          "cache_write": 0.44,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -8052,6 +8069,14 @@
           "from": "2026-10-19",
           "in": 0.1,
           "out": 0.5,
+          "cache_read": 0.003,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.6,
           "cache_read": 0.003,
           "cache_write": 0.1,
           "source": "nano-gpt"
@@ -12048,6 +12073,19 @@
         }
       ]
     },
+    "gemini-robotics-er-2-preview": {
+      "id": "gemini-robotics-er-2-preview",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1,
+          "out": 5,
+          "cache_read": 0.1,
+          "cache_write": 1,
+          "source": "edenai"
+        }
+      ]
+    },
     "gemma-2-27b-it": {
       "id": "gemma-2-27b-it",
       "rates": [
@@ -13519,6 +13557,18 @@
           "cache_read": 0.03,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.11952,
+          "out": 0.89637,
+          "cache_read": 0.0239,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.17927,
+          "tier_out": 1.19516,
+          "tier_cache_read": 0.03585,
+          "source": "zhipuai"
         }
       ],
       "first_party": true
@@ -13648,6 +13698,18 @@
           "out": 1.8,
           "cache_read": 0.11,
           "cache_write": 0.6,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.29879,
+          "out": 0.89637,
+          "cache_read": 0.05976,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.59758,
+          "tier_out": 1.79274,
+          "tier_cache_read": 0.11952,
           "source": "zhipuai"
         }
       ],
@@ -13779,6 +13841,18 @@
           "cache_read": 0.05,
           "cache_write": 0.3,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1494,
+          "out": 0.44819,
+          "cache_read": 0.02988,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.29879,
+          "tier_out": 0.89637,
+          "tier_cache_read": 0.05976,
+          "source": "zhipuai"
         }
       ],
       "first_party": true
@@ -13868,6 +13942,18 @@
           "cache_read": 0.11,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.44819,
+          "out": 2.09153,
+          "cache_read": 0.08964,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.59758,
+          "tier_out": 2.39032,
+          "tier_cache_read": 0.11952,
+          "source": "zhipuai"
         }
       ],
       "first_party": true
@@ -13941,6 +14027,14 @@
           "in": 0.07,
           "out": 0.4,
           "cache_read": 0.01,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.0747,
+          "out": 0.44819,
+          "cache_read": 0.01494,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -14022,6 +14116,18 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.59758,
+          "out": 2.68911,
+          "cache_read": 0.1494,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.89637,
+          "tier_out": 3.28669,
+          "tier_cache_read": 0.22409,
           "source": "zhipuai"
         }
       ],
@@ -14224,6 +14330,18 @@
           "cache_read": 0.26,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.89637,
+          "out": 3.58548,
+          "cache_read": 0.19421,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 1.19516,
+          "tier_out": 4.18306,
+          "tier_cache_read": 0.29879,
+          "source": "zhipuai"
         }
       ],
       "first_party": true
@@ -14325,6 +14443,14 @@
           "in": 1.4,
           "out": 4.4,
           "cache_read": 0.26,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.19516,
+          "out": 4.18306,
+          "cache_read": 0.29879,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -14723,6 +14849,14 @@
           "cache_read": 0.26,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.19516,
+          "out": 4.18306,
+          "cache_read": 0.29879,
+          "cache_write": 0,
+          "source": "zhipuai"
         }
       ],
       "first_party": true
@@ -14756,6 +14890,14 @@
           "in": 0.15,
           "out": 0.5,
           "cache_read": 0.03,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.11952,
+          "out": 0.41831,
+          "cache_read": 0.03436,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -14935,6 +15077,14 @@
           "in": 0.37,
           "out": 1.25,
           "cache_read": 0.075,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.29879,
+          "out": 1.04577,
+          "cache_read": 0.08516,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -15232,6 +15382,18 @@
           "out": 22,
           "cache_read": 1.2,
           "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.74698,
+          "out": 3.28669,
+          "cache_read": 0.17927,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 1.04577,
+          "tier_out": 3.88427,
+          "tier_cache_read": 0.26891,
           "source": "zhipuai"
         }
       ],
@@ -16961,6 +17123,19 @@
       ],
       "first_party": true
     },
+    "gpt-5-search-api": {
+      "id": "gpt-5-search-api",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
+          "cache_write": 1.25,
+          "source": "edenai"
+        }
+      ]
+    },
     "gpt-5-thinking": {
       "id": "gpt-5-thinking",
       "rates": [
@@ -17137,9 +17312,16 @@
           "cache_read": 0.175,
           "cache_write": 1.75,
           "source": "openai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0,
+          "cache_write": 1.75,
+          "source": "302ai"
         }
-      ],
-      "first_party": true
+      ]
     },
     "gpt-5.2-codex": {
       "id": "gpt-5.2-codex",
@@ -17204,9 +17386,16 @@
           "cache_read": 0.175,
           "cache_write": 1.75,
           "source": "openai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0,
+          "cache_write": 1.75,
+          "source": "302ai"
         }
-      ],
-      "first_party": true
+      ]
     },
     "gpt-5.3-codex": {
       "id": "gpt-5.3-codex",
@@ -18505,6 +18694,32 @@
         }
       ]
     },
+    "gpt-live-1": {
+      "id": "gpt-live-1",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "merge-gateway"
+        }
+      ]
+    },
+    "gpt-live-transcribe": {
+      "id": "gpt-live-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "llmgateway"
+        }
+      ]
+    },
     "gpt-luna": {
       "id": "gpt-luna",
       "rates": [
@@ -18854,6 +19069,19 @@
           "cache_read": 0.2,
           "cache_write": 2.5,
           "source": "kilo"
+        }
+      ]
+    },
+    "gpt-transcribe": {
+      "id": "gpt-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "llmgateway"
         }
       ]
     },
@@ -24720,6 +24948,20 @@
         }
       ]
     },
+    "mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "inception"
+        }
+      ],
+      "first_party": true
+    },
     "mercury-coder-small": {
       "id": "mercury-coder-small",
       "rates": [
@@ -25911,6 +26153,19 @@
       ],
       "first_party": true
     },
+    "minimax-m3-1-flash": {
+      "id": "minimax-m3-1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1125,
+          "out": 0.45,
+          "cache_read": 0.01125,
+          "cache_write": 0.1125,
+          "source": "empiriolabs"
+        }
+      ]
+    },
     "minimax-m3-free": {
       "id": "minimax-m3-free",
       "rates": [
@@ -26364,6 +26619,14 @@
           "cache_read": 0,
           "cache_write": 0.33759,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.33675,
+          "out": 0.449,
+          "cache_read": 0,
+          "cache_write": 0.33675,
+          "source": "edenai"
         }
       ]
     },
@@ -26402,6 +26665,14 @@
           "out": 0.04,
           "cache_read": 0,
           "cache_write": 0.04,
+          "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.1,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
           "source": "mistral"
         }
       ],
@@ -26446,6 +26717,14 @@
           "out": 0.1,
           "cache_read": 0,
           "cache_write": 0.1,
+          "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.15,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "mistral"
         }
       ],
@@ -32309,6 +32588,18 @@
           "cache_read": 0,
           "cache_write": 0.05,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.05,
+          "out": 0.4,
+          "cache_read": 0,
+          "cache_write": 0.05,
+          "tier_threshold": 256000,
+          "tier_in": 0.25,
+          "tier_out": 2,
+          "tier_cache_write": 0.25,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -32498,6 +32789,18 @@
           "out": 1.2,
           "cache_read": 0,
           "cache_write": 0.4,
+          "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.4,
+          "out": 1.2,
+          "cache_read": 0,
+          "cache_write": 0.4,
+          "tier_threshold": 256000,
+          "tier_in": 1.2,
+          "tier_out": 3.6,
+          "tier_cache_write": 1.2,
           "source": "alibaba"
         }
       ],
@@ -33965,6 +34268,18 @@
           "cache_read": 0,
           "cache_write": 0.3,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "tier_threshold": 32000,
+          "tier_in": 0.5,
+          "tier_out": 2.5,
+          "tier_cache_write": 0.5,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -34640,6 +34955,18 @@
           "cache_read": 0,
           "cache_write": 0.2,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 1.6,
+          "cache_read": 0,
+          "cache_write": 0.2,
+          "tier_threshold": 32000,
+          "tier_in": 0.3,
+          "tier_out": 2.4,
+          "tier_cache_write": 0.3,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -35076,6 +35403,18 @@
           "cache_read": 0,
           "cache_write": 0.4,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.4,
+          "out": 2.4,
+          "cache_read": 0,
+          "cache_write": 0.4,
+          "tier_threshold": 256000,
+          "tier_in": 0.5,
+          "tier_out": 3,
+          "tier_cache_write": 0.5,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -35250,6 +35589,14 @@
           "cache_read": 0,
           "cache_write": 0.248,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.375,
+          "out": 2.25,
+          "cache_read": 0,
+          "cache_write": 0.375,
+          "source": "alibaba"
         }
       ],
       "first_party": true
@@ -35349,6 +35696,19 @@
           "out": 1.125,
           "cache_read": 0,
           "cache_write": 0.234375,
+          "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.25,
+          "out": 1.5,
+          "cache_read": 0.025,
+          "cache_write": 0.3125,
+          "tier_threshold": 256000,
+          "tier_in": 1,
+          "tier_out": 4,
+          "tier_cache_read": 0.1,
+          "tier_cache_write": 1.25,
           "source": "alibaba"
         }
       ],
@@ -39183,6 +39543,14 @@
           "cache_read": 0,
           "cache_write": 0.1,
           "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.4,
+          "cache_read": 0,
+          "cache_write": 0.1,
+          "source": "mistral"
         }
       ],
       "first_party": true
@@ -39316,6 +39684,19 @@
           "cache_read": 0,
           "cache_write": 1.03155,
           "source": "aimlapi"
+        }
+      ]
+    },
+    "whisper-1": {
+      "id": "whisper-1",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "merge-gateway"
         }
       ]
     },
@@ -48662,6 +49043,32 @@
         }
       ]
     },
+    "aixy\u0000gemini-3.8-flash": {
+      "id": "gemini-3.8-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.75,
+          "out": 3.75,
+          "cache_read": 0.075,
+          "cache_write": 0.75,
+          "source": "aixy"
+        }
+      ]
+    },
+    "aixy\u0000gemini-4-argon": {
+      "id": "gemini-4-argon",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
+          "cache_write": 2,
+          "source": "aixy"
+        }
+      ]
+    },
     "aixy\u0000gpt-4.1-mini": {
       "id": "gpt-4.1-mini",
       "rates": [
@@ -48928,6 +49335,14 @@
           "cache_read": 0.04,
           "cache_write": 0.2,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.44,
+          "out": 1.32,
+          "cache_read": 0.088,
+          "cache_write": 0.44,
+          "source": "alibaba"
         }
       ]
     },
@@ -48979,6 +49394,18 @@
           "out": 0.4,
           "cache_read": 0,
           "cache_write": 0.05,
+          "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.05,
+          "out": 0.4,
+          "cache_read": 0,
+          "cache_write": 0.05,
+          "tier_threshold": 256000,
+          "tier_in": 0.25,
+          "tier_out": 2,
+          "tier_cache_write": 0.25,
           "source": "alibaba"
         }
       ]
@@ -49057,6 +49484,18 @@
           "out": 1.2,
           "cache_read": 0,
           "cache_write": 0.4,
+          "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.4,
+          "out": 1.2,
+          "cache_read": 0,
+          "cache_write": 0.4,
+          "tier_threshold": 256000,
+          "tier_in": 1.2,
+          "tier_out": 3.6,
+          "tier_cache_write": 1.2,
           "source": "alibaba"
         }
       ]
@@ -49350,6 +49789,18 @@
           "cache_read": 0,
           "cache_write": 0.3,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.5,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "tier_threshold": 32000,
+          "tier_in": 0.5,
+          "tier_out": 2.5,
+          "tier_cache_write": 0.5,
+          "source": "alibaba"
         }
       ]
     },
@@ -49480,6 +49931,18 @@
           "cache_read": 0,
           "cache_write": 0.2,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 1.6,
+          "cache_read": 0,
+          "cache_write": 0.2,
+          "tier_threshold": 32000,
+          "tier_in": 0.3,
+          "tier_out": 2.4,
+          "tier_cache_write": 0.3,
+          "source": "alibaba"
         }
       ]
     },
@@ -49558,6 +50021,18 @@
           "cache_read": 0,
           "cache_write": 0.4,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.4,
+          "out": 2.4,
+          "cache_read": 0,
+          "cache_write": 0.4,
+          "tier_threshold": 256000,
+          "tier_in": 0.5,
+          "tier_out": 3,
+          "tier_cache_write": 0.5,
+          "source": "alibaba"
         }
       ]
     },
@@ -49584,6 +50059,14 @@
           "cache_read": 0,
           "cache_write": 0.248,
           "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.375,
+          "out": 2.25,
+          "cache_read": 0,
+          "cache_write": 0.375,
+          "source": "alibaba"
         }
       ]
     },
@@ -49596,6 +50079,19 @@
           "out": 1.125,
           "cache_read": 0,
           "cache_write": 0.234375,
+          "source": "alibaba"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.25,
+          "out": 1.5,
+          "cache_read": 0.025,
+          "cache_write": 0.3125,
+          "tier_threshold": 256000,
+          "tier_in": 1,
+          "tier_out": 4,
+          "tier_cache_read": 0.1,
+          "tier_cache_write": 1.25,
           "source": "alibaba"
         }
       ]
@@ -49950,6 +50446,14 @@
           "cache_read": 0.003625,
           "cache_write": 0.435,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.65,
+          "out": 3.301,
+          "cache_read": 0,
+          "cache_write": 1.65,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50182,6 +50686,18 @@
           "cache_read": 0,
           "cache_write": 0.022,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.022,
+          "out": 0.216,
+          "cache_read": 0,
+          "cache_write": 0.022,
+          "tier_threshold": 128000,
+          "tier_in": 0.087,
+          "tier_out": 0.861,
+          "tier_cache_write": 0.087,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50298,6 +50814,18 @@
           "out": 0.287,
           "cache_read": 0.012,
           "cache_write": 0.144,
+          "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.115,
+          "out": 0.287,
+          "cache_read": 0.012,
+          "cache_write": 0.144,
+          "tier_threshold": 128000,
+          "tier_in": 0.345,
+          "tier_out": 2.868,
+          "tier_cache_write": 0.345,
           "source": "alibaba-cn"
         }
       ]
@@ -50643,6 +51171,18 @@
           "cache_read": 0,
           "cache_write": 0.144,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.144,
+          "out": 0.574,
+          "cache_read": 0,
+          "cache_write": 0.144,
+          "tier_threshold": 32000,
+          "tier_in": 0.216,
+          "tier_out": 0.861,
+          "tier_cache_write": 0.216,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50744,6 +51284,14 @@
           "cache_read": 0,
           "cache_write": 0.058,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.258,
+          "out": 0.989,
+          "cache_read": 0,
+          "cache_write": 0.258,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50795,6 +51343,18 @@
           "out": 1.433525,
           "cache_read": 0,
           "cache_write": 0.143353,
+          "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.143353,
+          "out": 1.433525,
+          "cache_read": 0,
+          "cache_write": 0.143353,
+          "tier_threshold": 32000,
+          "tier_in": 0.215,
+          "tier_out": 2.15,
+          "tier_cache_write": 0.215,
           "source": "alibaba-cn"
         }
       ]
@@ -50908,6 +51468,19 @@
           "cache_read": 0,
           "cache_write": 0.234375,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.165,
+          "out": 0.99,
+          "cache_read": 0.0165,
+          "cache_write": 0.20625,
+          "tier_threshold": 256000,
+          "tier_in": 0.66,
+          "tier_out": 3.961,
+          "tier_cache_read": 0.066,
+          "tier_cache_write": 0.825,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50938,6 +51511,19 @@
           "tier_out": 6,
           "tier_cache_read": 0.2,
           "tier_cache_write": 2.5,
+          "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.276,
+          "out": 1.651,
+          "cache_read": 0.0276,
+          "cache_write": 0.345,
+          "tier_threshold": 256000,
+          "tier_in": 1.101,
+          "tier_out": 6.602,
+          "tier_cache_read": 0.1101,
+          "tier_cache_write": 1.37625,
           "source": "alibaba-cn"
         }
       ]
@@ -50970,6 +51556,14 @@
           "cache_read": 0.5,
           "cache_write": 3.125,
           "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.65,
+          "out": 4.951,
+          "cache_read": 0.33,
+          "cache_write": 2.0625,
+          "source": "alibaba-cn"
         }
       ]
     },
@@ -50987,6 +51581,19 @@
           "tier_out": 6,
           "tier_cache_read": 0.2,
           "tier_cache_write": 2.5,
+          "source": "alibaba-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.276,
+          "out": 1.101,
+          "cache_read": 0.0276,
+          "cache_write": 0.345,
+          "tier_threshold": 256000,
+          "tier_in": 0.826,
+          "tier_out": 3.301,
+          "tier_cache_read": 0.0826,
+          "tier_cache_write": 1.0325,
           "source": "alibaba-cn"
         }
       ]
@@ -51451,6 +52058,19 @@
       "rates": [
         {
           "from": "2026-09-16",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "alibaba-token-plan"
+        }
+      ]
+    },
+    "alibaba-token-plan\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
           "in": 0,
           "out": 0,
           "cache_read": 0,
@@ -56470,6 +57090,19 @@
         }
       ]
     },
+    "azure\u0000deepseek-v4.1-flash": {
+      "id": "deepseek-v4.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
+          "source": "azure"
+        }
+      ]
+    },
     "azure\u0000gpt-3.5-turbo-0125": {
       "id": "gpt-3.5-turbo-0125",
       "rates": [
@@ -56610,6 +57243,14 @@
           "cache_read": 0.13,
           "cache_write": 1.25,
           "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
+          "cache_write": 1.25,
+          "source": "azure"
         }
       ]
     },
@@ -56621,6 +57262,14 @@
           "in": 1.25,
           "out": 10,
           "cache_read": 0.13,
+          "cache_write": 1.25,
+          "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
           "cache_write": 1.25,
           "source": "azure"
         }
@@ -56636,6 +57285,14 @@
           "cache_read": 0.03,
           "cache_write": 0.25,
           "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.25,
+          "out": 2,
+          "cache_read": 0.025,
+          "cache_write": 0.25,
+          "source": "azure"
         }
       ]
     },
@@ -56647,6 +57304,14 @@
           "in": 0.05,
           "out": 0.4,
           "cache_read": 0.01,
+          "cache_write": 0.05,
+          "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.05,
+          "out": 0.4,
+          "cache_read": 0.005,
           "cache_write": 0.05,
           "source": "azure"
         }
@@ -56725,6 +57390,14 @@
           "in": 1.75,
           "out": 14,
           "cache_read": 0.125,
+          "cache_write": 1.75,
+          "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
           "cache_write": 1.75,
           "source": "azure"
         }
@@ -56880,6 +57553,19 @@
           "tier_out": 45,
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
+          "source": "azure"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
+          "tier_cache_write": 10,
           "source": "azure"
         }
       ]
@@ -57780,6 +58466,45 @@
         }
       ]
     },
+    "azure-cognitive-services\u0000deepseek-v4-flash": {
+      "id": "deepseek-v4-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.19,
+          "out": 0.51,
+          "cache_read": 0,
+          "cache_write": 0.19,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000deepseek-v4-pro": {
+      "id": "deepseek-v4-pro",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1.74,
+          "out": 3.48,
+          "cache_read": 0,
+          "cache_write": 1.74,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000deepseek-v4.1-flash": {
+      "id": "deepseek-v4.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
     "azure-cognitive-services\u0000gpt-3.5-turbo-0125": {
       "id": "gpt-3.5-turbo-0125",
       "rates": [
@@ -57920,6 +58645,14 @@
           "cache_read": 0.13,
           "cache_write": 1.25,
           "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
+          "cache_write": 1.25,
+          "source": "azure-cognitive-services"
         }
       ]
     },
@@ -57931,6 +58664,14 @@
           "in": 1.25,
           "out": 10,
           "cache_read": 0.13,
+          "cache_write": 1.25,
+          "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
           "cache_write": 1.25,
           "source": "azure-cognitive-services"
         }
@@ -57946,6 +58687,14 @@
           "cache_read": 0.03,
           "cache_write": 0.25,
           "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.25,
+          "out": 2,
+          "cache_read": 0.025,
+          "cache_write": 0.25,
+          "source": "azure-cognitive-services"
         }
       ]
     },
@@ -57957,6 +58706,14 @@
           "in": 0.05,
           "out": 0.4,
           "cache_read": 0.01,
+          "cache_write": 0.05,
+          "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.05,
+          "out": 0.4,
+          "cache_read": 0.005,
           "cache_write": 0.05,
           "source": "azure-cognitive-services"
         }
@@ -58035,6 +58792,14 @@
           "in": 1.75,
           "out": 14,
           "cache_read": 0.125,
+          "cache_write": 1.75,
+          "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.75,
+          "out": 14,
+          "cache_read": 0.175,
           "cache_write": 1.75,
           "source": "azure-cognitive-services"
         }
@@ -58160,6 +58925,19 @@
           "tier_cache_read": 0.2,
           "tier_cache_write": 2.5,
           "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 1.2,
+          "cache_read": 0.02,
+          "cache_write": 0.25,
+          "tier_threshold": 272000,
+          "tier_in": 0.4,
+          "tier_out": 1.8,
+          "tier_cache_read": 0.04,
+          "tier_cache_write": 0.5,
+          "source": "azure-cognitive-services"
         }
       ]
     },
@@ -58176,6 +58954,19 @@
           "tier_in": 10,
           "tier_out": 45,
           "tier_cache_read": 1,
+          "tier_cache_write": 10,
+          "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 4,
+          "out": 20,
+          "cache_read": 0.4,
+          "cache_write": 5,
+          "tier_threshold": 272000,
+          "tier_in": 8,
+          "tier_out": 30,
+          "tier_cache_read": 0.8,
           "tier_cache_write": 10,
           "source": "azure-cognitive-services"
         }
@@ -58195,6 +58986,19 @@
           "tier_out": 22.5,
           "tier_cache_read": 0.5,
           "tier_cache_write": 6.25,
+          "source": "azure-cognitive-services"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 12,
+          "cache_read": 0.2,
+          "cache_write": 2.5,
+          "tier_threshold": 272000,
+          "tier_in": 4,
+          "tier_out": 18,
+          "tier_cache_read": 0.4,
+          "tier_cache_write": 5,
           "source": "azure-cognitive-services"
         }
       ]
@@ -58349,6 +59153,71 @@
         }
       ]
     },
+    "azure-cognitive-services\u0000grok-4-1-fast-non-reasoning": {
+      "id": "grok-4-1-fast-non-reasoning",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 0.5,
+          "cache_read": 0.05,
+          "cache_write": 0.2,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000grok-4-1-fast-reasoning": {
+      "id": "grok-4-1-fast-reasoning",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 0.5,
+          "cache_read": 0.05,
+          "cache_write": 0.2,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000grok-4-20-non-reasoning": {
+      "id": "grok-4-20-non-reasoning",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0,
+          "cache_write": 2,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000grok-4-20-reasoning": {
+      "id": "grok-4-20-reasoning",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0,
+          "cache_write": 2,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000grok-4.6": {
+      "id": "grok-4.6",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 6,
+          "cache_read": 0.5,
+          "cache_write": 2,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
     "azure-cognitive-services\u0000kimi-k2.5": {
       "id": "kimi-k2.5",
       "rates": [
@@ -58370,6 +59239,19 @@
           "in": 0.95,
           "out": 4,
           "cache_read": 0,
+          "cache_write": 0.95,
+          "source": "azure-cognitive-services"
+        }
+      ]
+    },
+    "azure-cognitive-services\u0000kimi-k2.7-code": {
+      "id": "kimi-k2.7-code",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.95,
+          "out": 4,
+          "cache_read": 0.19,
           "cache_write": 0.95,
           "source": "azure-cognitive-services"
         }
@@ -61312,6 +62194,19 @@
         }
       ]
     },
+    "cloudflare-workers-ai\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
+          "source": "cloudflare-workers-ai"
+        }
+      ]
+    },
     "cloudflare-workers-ai\u0000gemma-4-26b-a4b-it": {
       "id": "gemma-4-26b-a4b-it",
       "rates": [
@@ -61629,6 +62524,19 @@
           "cache_read": 0,
           "cache_write": 0.66,
           "source": "cloudflare-workers-ai"
+        }
+      ]
+    },
+    "cohere\u0000c4ai-aya-expanse-32b": {
+      "id": "c4ai-aya-expanse-32b",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.5,
+          "out": 1.5,
+          "cache_read": 0,
+          "cache_write": 0.5,
+          "source": "cohere"
         }
       ]
     },
@@ -63593,6 +64501,14 @@
           "cache_read": 0.221,
           "cache_write": 0.873,
           "source": "cortecs"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.511,
+          "out": 2.045,
+          "cache_read": 0.154,
+          "cache_write": 0.511,
+          "source": "cortecs"
         }
       ]
     },
@@ -63803,6 +64719,19 @@
           "out": 13.199,
           "cache_read": 0.219,
           "cache_write": 2.749,
+          "source": "cortecs"
+        }
+      ]
+    },
+    "cortecs\u0000gpt-6-astra": {
+      "id": "gpt-6-astra",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 12.272,
+          "out": 61.359,
+          "cache_read": 1.228,
+          "cache_write": 15.34,
           "source": "cortecs"
         }
       ]
@@ -69994,6 +70923,19 @@
         }
       ]
     },
+    "edenai\u0000beam-1.0-501b-a23b": {
+      "id": "beam-1.0-501b-a23b",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.4,
+          "out": 1.2,
+          "cache_read": 0.04,
+          "cache_write": 0.4,
+          "source": "edenai"
+        }
+      ]
+    },
     "edenai\u0000c4ai-aya-expanse-32b": {
       "id": "c4ai-aya-expanse-32b",
       "rates": [
@@ -70819,6 +71761,19 @@
         }
       ]
     },
+    "edenai\u0000ember-1": {
+      "id": "ember-1",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 3,
+          "out": 15,
+          "cache_read": 0.3,
+          "cache_write": 3,
+          "source": "edenai"
+        }
+      ]
+    },
     "edenai\u0000gemini-2.5-flash-image": {
       "id": "gemini-2.5-flash-image",
       "rates": [
@@ -71372,6 +72327,19 @@
         }
       ]
     },
+    "edenai\u0000gemini-robotics-er-2-preview": {
+      "id": "gemini-robotics-er-2-preview",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1,
+          "out": 5,
+          "cache_read": 0.1,
+          "cache_write": 1,
+          "source": "edenai"
+        }
+      ]
+    },
     "edenai\u0000gemma-3-12b-it": {
       "id": "gemma-3-12b-it",
       "rates": [
@@ -71858,6 +72826,19 @@
         }
       ]
     },
+    "edenai\u0000gpt-5-search-api": {
+      "id": "gpt-5-search-api",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0.125,
+          "cache_write": 1.25,
+          "source": "edenai"
+        }
+      ]
+    },
     "edenai\u0000gpt-5.1": {
       "id": "gpt-5.1",
       "rates": [
@@ -72322,6 +73303,19 @@
           "tier_out": 30,
           "tier_cache_read": 0.8,
           "tier_cache_write": 10,
+          "source": "edenai"
+        }
+      ]
+    },
+    "edenai\u0000granite-4.2-8b": {
+      "id": "granite-4.2-8b",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.06,
+          "out": 0.25,
+          "cache_read": 0.015,
+          "cache_write": 0.06,
           "source": "edenai"
         }
       ]
@@ -72987,6 +73981,14 @@
           "cache_read": 0,
           "cache_write": 1.01277,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.01025,
+          "out": 1.01025,
+          "cache_read": 0,
+          "cache_write": 1.01025,
+          "source": "edenai"
         }
       ]
     },
@@ -73098,6 +74100,19 @@
           "out": 1.2,
           "cache_read": 0.06,
           "cache_write": 0.3,
+          "source": "edenai"
+        }
+      ]
+    },
+    "edenai\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "edenai"
         }
       ]
@@ -73316,6 +74331,14 @@
           "out": 0.45012,
           "cache_read": 0,
           "cache_write": 0.33759,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.33675,
+          "out": 0.449,
+          "cache_read": 0,
+          "cache_write": 0.33675,
           "source": "edenai"
         }
       ]
@@ -73980,6 +75003,14 @@
           "cache_read": 0,
           "cache_write": 0.843975,
           "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.841875,
+          "out": 2.525624,
+          "cache_read": 0,
+          "cache_write": 0.841875,
+          "source": "edenai"
         }
       ]
     },
@@ -74040,6 +75071,14 @@
           "out": 0.90024,
           "cache_read": 0,
           "cache_write": 0.22506,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2245,
+          "out": 0.898,
+          "cache_read": 0,
+          "cache_write": 0.2245,
           "source": "edenai"
         }
       ]
@@ -74135,6 +75174,14 @@
           "out": 0.90024,
           "cache_read": 0,
           "cache_write": 0.168795,
+          "source": "edenai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.168375,
+          "out": 0.898,
+          "cache_read": 0,
+          "cache_write": 0.168375,
           "source": "edenai"
         }
       ]
@@ -75057,6 +76104,19 @@
           "tier_out": 1.8,
           "tier_cache_read": 0.09,
           "tier_cache_write": 0.45,
+          "source": "empiriolabs"
+        }
+      ]
+    },
+    "empiriolabs\u0000minimax-m3-1-flash": {
+      "id": "minimax-m3-1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1125,
+          "out": 0.45,
+          "cache_read": 0.01125,
+          "cache_write": 0.1125,
           "source": "empiriolabs"
         }
       ]
@@ -82525,6 +83585,19 @@
         }
       ]
     },
+    "huggingface\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0,
+          "cache_write": 0.3,
+          "source": "huggingface"
+        }
+      ]
+    },
     "huggingface\u0000gemma-3-12b-it": {
       "id": "gemma-3-12b-it",
       "rates": [
@@ -83490,6 +84563,19 @@
         },
         {
           "from": "2026-10-02",
+          "in": 0.33,
+          "out": 1.31,
+          "cache_read": 0.03,
+          "cache_write": 0.33,
+          "source": "hyper"
+        }
+      ]
+    },
+    "hyper\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
           "in": 0.33,
           "out": 1.31,
           "cache_read": 0.03,
@@ -85476,6 +86562,19 @@
           "out": 0.15,
           "cache_read": 0.004,
           "cache_write": 0.04,
+          "source": "inception"
+        }
+      ]
+    },
+    "inception\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
           "source": "inception"
         }
       ]
@@ -89227,6 +90326,14 @@
           "cache_read": 0,
           "cache_write": 0.32,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2574,
+          "out": 1.0287,
+          "cache_read": 0,
+          "cache_write": 0.2574,
+          "source": "kilo"
         }
       ]
     },
@@ -89538,6 +90645,14 @@
           "cache_read": 0.006,
           "cache_write": 0.047,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.07,
+          "out": 0.5,
+          "cache_read": 0.008,
+          "cache_write": 0.07,
+          "source": "kilo"
         }
       ]
     },
@@ -89790,6 +90905,14 @@
           "out": 0.6732,
           "cache_read": 0.00714,
           "cache_write": 0.2244,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.225,
+          "out": 8,
+          "cache_read": 0.23,
+          "cache_write": 0.225,
           "source": "kilo"
         }
       ]
@@ -90177,6 +91300,14 @@
           "out": 0.45,
           "cache_read": 0.0114,
           "cache_write": 0.0114,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.01208,
+          "out": 0.12,
+          "cache_read": 0.00336,
+          "cache_write": 0.01208,
           "source": "kilo"
         }
       ]
@@ -91342,6 +92473,14 @@
           "cache_read": 0.028,
           "cache_write": 0.045,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.079,
+          "out": 1.4,
+          "cache_read": 0.078,
+          "cache_write": 0.079,
+          "source": "kilo"
         }
       ]
     },
@@ -91581,6 +92720,14 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 1,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.6,
+          "out": 1.92,
+          "cache_read": 0.12,
+          "cache_write": 0.6,
           "source": "kilo"
         }
       ]
@@ -91906,6 +93053,14 @@
           "out": 0.16,
           "cache_read": 0.006,
           "cache_write": 0.048,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.037476,
+          "out": 0.16,
+          "cache_read": 0.006,
+          "cache_write": 0.037476,
           "source": "kilo"
         }
       ]
@@ -93598,6 +94753,14 @@
           "cache_read": 0.228,
           "cache_write": 0.238,
           "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.238,
+          "out": 16,
+          "cache_read": 0.228,
+          "cache_write": 0.238,
+          "source": "kilo"
         }
       ]
     },
@@ -94364,6 +95527,19 @@
         }
       ]
     },
+    "kilo\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.2,
+          "out": 0.7,
+          "cache_read": 0.02,
+          "cache_write": 0.2,
+          "source": "kilo"
+        }
+      ]
+    },
     "kilo\u0000mimo-v2.5": {
       "id": "mimo-v2.5",
       "rates": [
@@ -94465,6 +95641,14 @@
           "out": 0.28,
           "cache_read": 0.05,
           "cache_write": 0.1,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.03,
+          "out": 0.08,
+          "cache_read": 0.003,
+          "cache_write": 0.03,
           "source": "kilo"
         }
       ]
@@ -96458,6 +97642,14 @@
           "out": 1,
           "cache_read": 0.05,
           "cache_write": 0.15,
+          "source": "kilo"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.95,
+          "cache_read": 0.05,
+          "cache_write": 0.1,
           "source": "kilo"
         }
       ]
@@ -99186,6 +100378,19 @@
         }
       ]
     },
+    "llmgateway\u0000gpt-live-transcribe": {
+      "id": "gpt-live-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "llmgateway"
+        }
+      ]
+    },
     "llmgateway\u0000gpt-oss-120b": {
       "id": "gpt-oss-120b",
       "rates": [
@@ -99216,6 +100421,19 @@
           "out": 0.19,
           "cache_read": 0.01,
           "cache_write": 0.04,
+          "source": "llmgateway"
+        }
+      ]
+    },
+    "llmgateway\u0000gpt-transcribe": {
+      "id": "gpt-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
           "source": "llmgateway"
         }
       ]
@@ -100025,6 +101243,19 @@
           "out": 1.1,
           "cache_read": 0.05,
           "cache_write": 0.28,
+          "source": "llmgateway"
+        }
+      ]
+    },
+    "llmgateway\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "llmgateway"
         }
       ]
@@ -101491,6 +102722,14 @@
           "cache_read": 0.007,
           "cache_write": 0.3,
           "source": "llmgateway-providers"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
+          "source": "llmgateway-providers"
         }
       ]
     },
@@ -102549,6 +103788,19 @@
         }
       ]
     },
+    "llmgateway-providers\u0000gpt-live-transcribe": {
+      "id": "gpt-live-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "llmgateway-providers"
+        }
+      ]
+    },
     "llmgateway-providers\u0000gpt-oss-120b": {
       "id": "gpt-oss-120b",
       "rates": [
@@ -102579,6 +103831,19 @@
           "out": 0.5,
           "cache_read": 0,
           "cache_write": 0.1,
+          "source": "llmgateway-providers"
+        }
+      ]
+    },
+    "llmgateway-providers\u0000gpt-transcribe": {
+      "id": "gpt-transcribe",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
           "source": "llmgateway-providers"
         }
       ]
@@ -103372,6 +104637,19 @@
           "out": 1.2,
           "cache_read": 0.06,
           "cache_write": 0.3,
+          "source": "llmgateway-providers"
+        }
+      ]
+    },
+    "llmgateway-providers\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "llmgateway-providers"
         }
       ]
@@ -105783,6 +107061,19 @@
         }
       ]
     },
+    "melious\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.33675,
+          "out": 1.347,
+          "cache_read": 0.033675,
+          "cache_write": 0.33675,
+          "source": "melious"
+        }
+      ]
+    },
     "melious\u0000glm-5": {
       "id": "glm-5",
       "rates": [
@@ -107413,6 +108704,19 @@
         }
       ]
     },
+    "merge-gateway\u0000gpt-5-search-api": {
+      "id": "gpt-5-search-api",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1.25,
+          "out": 10,
+          "cache_read": 0,
+          "cache_write": 1.25,
+          "source": "merge-gateway"
+        }
+      ]
+    },
     "merge-gateway\u0000gpt-5.1": {
       "id": "gpt-5.1",
       "rates": [
@@ -107667,6 +108971,45 @@
           "out": 10,
           "cache_read": 0.1,
           "cache_write": 2.5,
+          "source": "merge-gateway"
+        }
+      ]
+    },
+    "merge-gateway\u0000gpt-audio": {
+      "id": "gpt-audio",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 2.5,
+          "out": 10,
+          "cache_read": 0,
+          "cache_write": 2.5,
+          "source": "merge-gateway"
+        }
+      ]
+    },
+    "merge-gateway\u0000gpt-audio-mini": {
+      "id": "gpt-audio-mini",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.6,
+          "out": 2.4,
+          "cache_read": 0,
+          "cache_write": 0.6,
+          "source": "merge-gateway"
+        }
+      ]
+    },
+    "merge-gateway\u0000gpt-live-1": {
+      "id": "gpt-live-1",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
           "source": "merge-gateway"
         }
       ]
@@ -108094,6 +109437,19 @@
           "out": 1.2,
           "cache_read": 0.06,
           "cache_write": 0.3,
+          "source": "merge-gateway"
+        }
+      ]
+    },
+    "merge-gateway\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "merge-gateway"
         }
       ]
@@ -108962,6 +110318,19 @@
         }
       ]
     },
+    "merge-gateway\u0000whisper-1": {
+      "id": "whisper-1",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0,
+          "out": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "source": "merge-gateway"
+        }
+      ]
+    },
     "meta\u0000muse-spark-1.1": {
       "id": "muse-spark-1.1",
       "rates": [
@@ -109167,6 +110536,14 @@
           "cache_read": 0,
           "cache_write": 0.3,
           "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3137,
+          "out": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922,
+          "source": "minimax-cn"
         }
       ]
     },
@@ -109179,6 +110556,14 @@
           "out": 1.2,
           "cache_read": 0.03,
           "cache_write": 0.375,
+          "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3137,
+          "out": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922,
           "source": "minimax-cn"
         }
       ]
@@ -109193,6 +110578,14 @@
           "cache_read": 0.03,
           "cache_write": 0.375,
           "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3137,
+          "out": 1.2549,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922,
+          "source": "minimax-cn"
         }
       ]
     },
@@ -109205,6 +110598,14 @@
           "out": 2.4,
           "cache_read": 0.06,
           "cache_write": 0.375,
+          "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.6275,
+          "out": 2.5098,
+          "cache_read": 0.0314,
+          "cache_write": 0.3922,
           "source": "minimax-cn"
         }
       ]
@@ -109219,6 +110620,14 @@
           "cache_read": 0.06,
           "cache_write": 0.375,
           "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3137,
+          "out": 1.2549,
+          "cache_read": 0.0627,
+          "cache_write": 0.3922,
+          "source": "minimax-cn"
         }
       ]
     },
@@ -109231,6 +110640,14 @@
           "out": 2.4,
           "cache_read": 0.06,
           "cache_write": 0.375,
+          "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.6275,
+          "out": 2.5098,
+          "cache_read": 0.0627,
+          "cache_write": 0.3922,
           "source": "minimax-cn"
         }
       ]
@@ -109250,6 +110667,19 @@
           "tier_cache_read": 0.12,
           "tier_cache_write": 0.6,
           "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3137,
+          "out": 1.2549,
+          "cache_read": 0.0627,
+          "cache_write": 0.3137,
+          "tier_threshold": 512000,
+          "tier_in": 0.6275,
+          "tier_out": 2.5098,
+          "tier_cache_read": 0.1255,
+          "tier_cache_write": 0.6275,
+          "source": "minimax-cn"
         }
       ]
     },
@@ -109262,6 +110692,14 @@
           "out": 0.6,
           "cache_read": 0.015,
           "cache_write": 0.15,
+          "source": "minimax-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1494,
+          "out": 0.5976,
+          "cache_read": 0.0149,
+          "cache_write": 0.1494,
           "source": "minimax-cn"
         }
       ]
@@ -109700,6 +111138,14 @@
           "cache_read": 0,
           "cache_write": 0.04,
           "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.1,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "mistral"
         }
       ]
     },
@@ -109725,6 +111171,14 @@
           "out": 0.1,
           "cache_read": 0,
           "cache_write": 0.1,
+          "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.15,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "mistral"
         }
       ]
@@ -110044,6 +111498,14 @@
           "from": "2026-08-27",
           "in": 0.1,
           "out": 0.3,
+          "cache_read": 0,
+          "cache_write": 0.1,
+          "source": "mistral"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.4,
           "cache_read": 0,
           "cache_write": 0.1,
           "source": "mistral"
@@ -110781,6 +112243,14 @@
           "cache_read": 0.16,
           "cache_write": 0.95,
           "source": "moonshotai-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.9711,
+          "out": 4.0337,
+          "cache_read": 0.1643,
+          "cache_write": 0.9711,
+          "source": "moonshotai-cn"
         }
       ]
     },
@@ -110793,6 +112263,14 @@
           "out": 4,
           "cache_read": 0.19,
           "cache_write": 0.95,
+          "source": "moonshotai-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.9711,
+          "out": 4.0337,
+          "cache_read": 0.1942,
+          "cache_write": 0.9711,
           "source": "moonshotai-cn"
         }
       ]
@@ -110807,6 +112285,14 @@
           "cache_read": 0.38,
           "cache_write": 1.9,
           "source": "moonshotai-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.9421,
+          "out": 8.0673,
+          "cache_read": 0.3884,
+          "cache_write": 1.9421,
+          "source": "moonshotai-cn"
         }
       ]
     },
@@ -110819,6 +112305,14 @@
           "out": 15,
           "cache_read": 0.3,
           "cache_write": 3,
+          "source": "moonshotai-cn"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 2.9879,
+          "out": 14.9395,
+          "cache_read": 0.2988,
+          "cache_write": 2.9879,
           "source": "moonshotai-cn"
         }
       ]
@@ -113005,6 +114499,14 @@
           "cache_read": 0.003,
           "cache_write": 0.1,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.6,
+          "cache_read": 0.003,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -113387,6 +114889,14 @@
           "cache_read": 0.003,
           "cache_write": 0.1,
           "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.6,
+          "cache_read": 0.003,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
         }
       ]
     },
@@ -113413,6 +114923,14 @@
           "from": "2026-10-19",
           "in": 0.1,
           "out": 0.5,
+          "cache_read": 0.003,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.6,
           "cache_read": 0.003,
           "cache_write": 0.1,
           "source": "nano-gpt"
@@ -118729,6 +120247,19 @@
         }
       ]
     },
+    "nano-gpt\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "nano-gpt"
+        }
+      ]
+    },
     "nano-gpt\u0000mercury-coder-small": {
       "id": "mercury-coder-small",
       "rates": [
@@ -119106,6 +120637,19 @@
           "out": 0.96,
           "cache_read": 0.05,
           "cache_write": 0.23,
+          "source": "nano-gpt"
+        }
+      ]
+    },
+    "nano-gpt\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "nano-gpt"
         }
       ]
@@ -122537,6 +124081,19 @@
       "rates": [
         {
           "from": "2026-10-12",
+          "in": 0.3,
+          "out": 1.2,
+          "cache_read": 0.006,
+          "cache_write": 0.3,
+          "source": "nearai"
+        }
+      ]
+    },
+    "nearai\u0000deepseek-v4.1-flash-1017": {
+      "id": "deepseek-v4.1-flash-1017",
+      "rates": [
+        {
+          "from": "2026-10-20",
           "in": 0.3,
           "out": 1.2,
           "cache_read": 0.006,
@@ -131225,6 +132782,19 @@
         }
       ]
     },
+    "ollama-cloud\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
+          "source": "ollama-cloud"
+        }
+      ]
+    },
     "ollama-cloud\u0000mistral-large-3": {
       "id": "mistral-large-3",
       "rates": [
@@ -134827,6 +136397,14 @@
           "cache_read": 0.1,
           "cache_write": 1,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1,
+          "cache_read": 0.04,
+          "cache_write": 0.3,
+          "source": "openrouter"
         }
       ]
     },
@@ -135417,6 +136995,14 @@
           "cache_read": 0,
           "cache_write": 0.32,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.2574,
+          "out": 1.0287,
+          "cache_read": 0,
+          "cache_write": 0.2574,
+          "source": "openrouter"
         }
       ]
     },
@@ -135720,6 +137306,14 @@
           "cache_read": 0.006,
           "cache_write": 0.047,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.07,
+          "out": 0.5,
+          "cache_read": 0.008,
+          "cache_write": 0.07,
+          "source": "openrouter"
         }
       ]
     },
@@ -135972,6 +137566,14 @@
           "out": 0.6732,
           "cache_read": 0.00714,
           "cache_write": 0.2244,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.225,
+          "out": 8,
+          "cache_read": 0.23,
+          "cache_write": 0.225,
           "source": "openrouter"
         }
       ]
@@ -136360,6 +137962,14 @@
           "cache_read": 0.0114,
           "cache_write": 0.0114,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.01208,
+          "out": 0.12,
+          "cache_read": 0.00336,
+          "cache_write": 0.01208,
+          "source": "openrouter"
         }
       ]
     },
@@ -136564,6 +138174,14 @@
           "out": 0.15,
           "cache_read": 0.042,
           "cache_write": 0.15,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.44,
+          "out": 1.32,
+          "cache_read": 0.014,
+          "cache_write": 0.44,
           "source": "openrouter"
         }
       ]
@@ -137168,6 +138786,14 @@
           "out": 0.08,
           "cache_read": 0.0016,
           "cache_write": 0.0376,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.056,
+          "out": 0.12,
+          "cache_read": 0.0016,
+          "cache_write": 0.056,
           "source": "openrouter"
         }
       ]
@@ -137795,6 +139421,14 @@
           "cache_read": 0,
           "cache_write": 0.05,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.04,
+          "out": 0.05,
+          "cache_read": 0.02,
+          "cache_write": 0.04,
+          "source": "openrouter"
         }
       ]
     },
@@ -138201,6 +139835,14 @@
           "cache_read": 0.028,
           "cache_write": 0.045,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.079,
+          "out": 1.4,
+          "cache_read": 0.078,
+          "cache_write": 0.079,
+          "source": "openrouter"
         }
       ]
     },
@@ -138440,6 +140082,14 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 1,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.6,
+          "out": 1.92,
+          "cache_read": 0.12,
+          "cache_write": 0.6,
           "source": "openrouter"
         }
       ]
@@ -139050,6 +140700,14 @@
           "cache_read": 0.006,
           "cache_write": 0.048,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.037476,
+          "out": 0.16,
+          "cache_read": 0.006,
+          "cache_write": 0.037476,
+          "source": "openrouter"
         }
       ]
     },
@@ -139301,6 +140959,14 @@
           "out": 0.16,
           "cache_read": 0.006,
           "cache_write": 0.048,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.037476,
+          "out": 0.16,
+          "cache_read": 0.006,
+          "cache_write": 0.037476,
           "source": "openrouter"
         }
       ]
@@ -141186,6 +142852,14 @@
           "cache_read": 0.228,
           "cache_write": 0.238,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.238,
+          "out": 16,
+          "cache_read": 0.228,
+          "cache_write": 0.238,
+          "source": "openrouter"
         }
       ]
     },
@@ -142283,6 +143957,19 @@
         }
       ]
     },
+    "openrouter\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "openrouter"
+        }
+      ]
+    },
     "openrouter\u0000mimo-v2.5": {
       "id": "mimo-v2.5",
       "rates": [
@@ -143348,6 +145035,14 @@
           "out": 0.4,
           "cache_read": 0.08,
           "cache_write": 0.1,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.5,
+          "cache_read": 0.02,
+          "cache_write": 0.15,
           "source": "openrouter"
         }
       ]
@@ -144617,6 +146312,14 @@
           "cache_read": 0.3,
           "cache_write": 0.5,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.39,
+          "out": 2.34,
+          "cache_read": 0,
+          "cache_write": 0.39,
+          "source": "openrouter"
         }
       ]
     },
@@ -144799,6 +146502,14 @@
           "cache_read": 0.05,
           "cache_write": 0.15,
           "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.95,
+          "cache_read": 0.05,
+          "cache_write": 0.1,
+          "source": "openrouter"
         }
       ]
     },
@@ -144964,6 +146675,14 @@
           "out": 2.2,
           "cache_read": 0.05,
           "cache_write": 0.24,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.04,
+          "out": 1.35,
+          "cache_read": 0.018,
+          "cache_write": 0.04,
           "source": "openrouter"
         }
       ]
@@ -145352,6 +147071,14 @@
           "out": 0.36,
           "cache_read": 0.018,
           "cache_write": 0.09,
+          "source": "openrouter"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.03,
+          "cache_write": 0.15,
           "source": "openrouter"
         }
       ]
@@ -156674,6 +158401,19 @@
         }
       ]
     },
+    "requesty\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
+          "source": "requesty"
+        }
+      ]
+    },
     "requesty\u0000minimax-m3@eu": {
       "id": "minimax-m3@eu",
       "rates": [
@@ -157747,6 +159487,19 @@
           "out": 1.9,
           "cache_read": 0.03,
           "cache_write": 0.6,
+          "source": "runinfra"
+        }
+      ]
+    },
+    "runinfra\u0000glm-5.3": {
+      "id": "glm-5.3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 1.3,
+          "out": 4.2,
+          "cache_read": 0.13,
+          "cache_write": 1.3,
           "source": "runinfra"
         }
       ]
@@ -166350,6 +168103,19 @@
         }
       ]
     },
+    "venice\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "venice"
+        }
+      ]
+    },
     "venice\u0000minimax-m25": {
       "id": "minimax-m25",
       "rates": [
@@ -166372,6 +168138,19 @@
           "out": 1.5,
           "cache_read": 0.06875,
           "cache_write": 0.375,
+          "source": "venice"
+        }
+      ]
+    },
+    "venice\u0000minimax-m3-1-flash": {
+      "id": "minimax-m3-1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1875,
+          "out": 0.75,
+          "cache_read": 0.01875,
+          "cache_write": 0.1875,
           "source": "venice"
         }
       ]
@@ -171209,6 +172988,14 @@
           "cache_read": 0.024999999999999998,
           "cache_write": 0.25,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.25,
+          "out": 0.75,
+          "cache_read": 0.025,
+          "cache_write": 0.25,
+          "source": "vercel"
         }
       ]
     },
@@ -171221,6 +173008,19 @@
           "out": 0.15,
           "cache_read": 0.004,
           "cache_write": 0.04,
+          "source": "vercel"
+        }
+      ]
+    },
+    "vercel\u0000mercury-3": {
+      "id": "mercury-3",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.35,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
           "source": "vercel"
         }
       ]
@@ -171514,6 +173314,14 @@
           "cache_read": 0,
           "cache_write": 0.04,
           "source": "vercel"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1,
+          "out": 0.1,
+          "cache_read": 0.01,
+          "cache_write": 0.1,
+          "source": "vercel"
         }
       ]
     },
@@ -171526,6 +173334,14 @@
           "out": 0.1,
           "cache_read": 0,
           "cache_write": 0.1,
+          "source": "vercel"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.15,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
           "source": "vercel"
         }
       ]
@@ -173059,6 +174875,15 @@
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
           "source": "google-vertex-anthropic"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 5,
+          "out": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25,
+          "cache_write_1h": 10,
+          "source": "google-vertex-anthropic"
         }
       ]
     },
@@ -173078,6 +174903,15 @@
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
           "source": "google-vertex-anthropic"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 5,
+          "out": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25,
+          "cache_write_1h": 10,
+          "source": "google-vertex-anthropic"
         }
       ]
     },
@@ -173096,6 +174930,15 @@
           "tier_out": 37.5,
           "tier_cache_read": 1,
           "tier_cache_write": 12.5,
+          "source": "google-vertex-anthropic"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 5,
+          "out": 25,
+          "cache_read": 0.5,
+          "cache_write": 6.25,
+          "cache_write_1h": 10,
           "source": "google-vertex-anthropic"
         }
       ]
@@ -173172,6 +175015,15 @@
           "tier_cache_read": 0.6,
           "tier_cache_write": 7.5,
           "source": "google-vertex-anthropic"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 3,
+          "out": 15,
+          "cache_read": 0.3,
+          "cache_write": 3.75,
+          "cache_write_1h": 6,
+          "source": "google-vertex-anthropic"
         }
       ]
     },
@@ -173197,6 +175049,15 @@
           "in": 2,
           "out": 10,
           "cache_read": 0.2,
+          "cache_write": 2.5,
+          "cache_write_1h": 4,
+          "source": "google-vertex-anthropic"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 2,
+          "out": 10,
+          "cache_read": 0.1,
           "cache_write": 2.5,
           "cache_write_1h": 4,
           "source": "google-vertex-anthropic"
@@ -174592,6 +176453,14 @@
           "cache_read": 0.1,
           "cache_write": 1,
           "source": "wandb"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 1,
+          "cache_read": 0.04,
+          "cache_write": 0.3,
+          "source": "wandb"
         }
       ]
     },
@@ -175956,6 +177825,18 @@
           "cache_read": 0.03,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.11952,
+          "out": 0.89637,
+          "cache_read": 0.0239,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.17927,
+          "tier_out": 1.19516,
+          "tier_cache_read": 0.03585,
+          "source": "zhipuai"
         }
       ]
     },
@@ -175989,6 +177870,18 @@
           "out": 1.8,
           "cache_read": 0.11,
           "cache_write": 0.6,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.29879,
+          "out": 0.89637,
+          "cache_read": 0.05976,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.59758,
+          "tier_out": 1.79274,
+          "tier_cache_read": 0.11952,
           "source": "zhipuai"
         }
       ]
@@ -176024,6 +177917,18 @@
           "cache_read": 0.05,
           "cache_write": 0.3,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.1494,
+          "out": 0.44819,
+          "cache_read": 0.02988,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.29879,
+          "tier_out": 0.89637,
+          "tier_cache_read": 0.05976,
+          "source": "zhipuai"
         }
       ]
     },
@@ -176049,6 +177954,18 @@
           "out": 2.2,
           "cache_read": 0.11,
           "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.44819,
+          "out": 2.09153,
+          "cache_read": 0.08964,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.59758,
+          "tier_out": 2.39032,
+          "tier_cache_read": 0.11952,
           "source": "zhipuai"
         }
       ]
@@ -176076,6 +177993,14 @@
           "cache_read": 0.01,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.0747,
+          "out": 0.44819,
+          "cache_read": 0.01494,
+          "cache_write": 0,
+          "source": "zhipuai"
         }
       ]
     },
@@ -176088,6 +178013,18 @@
           "out": 3.2,
           "cache_read": 0.2,
           "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.59758,
+          "out": 2.68911,
+          "cache_read": 0.1494,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 0.89637,
+          "tier_out": 3.28669,
+          "tier_cache_read": 0.22409,
           "source": "zhipuai"
         }
       ]
@@ -176102,6 +178039,18 @@
           "cache_read": 0.26,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.89637,
+          "out": 3.58548,
+          "cache_read": 0.19421,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 1.19516,
+          "tier_out": 4.18306,
+          "tier_cache_read": 0.29879,
+          "source": "zhipuai"
         }
       ]
     },
@@ -176115,6 +178064,14 @@
           "cache_read": 0.26,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.19516,
+          "out": 4.18306,
+          "cache_read": 0.29879,
+          "cache_write": 0,
+          "source": "zhipuai"
         }
       ]
     },
@@ -176126,6 +178083,14 @@
           "in": 1.4,
           "out": 4.4,
           "cache_read": 0.26,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 1.19516,
+          "out": 4.18306,
+          "cache_read": 0.29879,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -176149,6 +178114,14 @@
           "cache_read": 0.03,
           "cache_write": 0,
           "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.11952,
+          "out": 0.41831,
+          "cache_read": 0.03436,
+          "cache_write": 0,
+          "source": "zhipuai"
         }
       ]
     },
@@ -176160,6 +178133,14 @@
           "in": 0.37,
           "out": 1.25,
           "cache_read": 0.075,
+          "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.29879,
+          "out": 1.04577,
+          "cache_read": 0.08516,
           "cache_write": 0,
           "source": "zhipuai"
         }
@@ -176174,6 +178155,18 @@
           "out": 22,
           "cache_read": 1.2,
           "cache_write": 0,
+          "source": "zhipuai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.74698,
+          "out": 3.28669,
+          "cache_read": 0.17927,
+          "cache_write": 0,
+          "tier_threshold": 32000,
+          "tier_in": 1.04577,
+          "tier_out": 3.88427,
+          "tier_cache_read": 0.26891,
           "source": "zhipuai"
         }
       ]
@@ -176235,6 +178228,14 @@
           "cache_read": 0.11,
           "cache_write": 0.6,
           "source": "zai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.6,
+          "out": 1.8,
+          "cache_read": 0.11,
+          "cache_write": 0,
+          "source": "zai"
         }
       ]
     },
@@ -176268,6 +178269,14 @@
           "out": 0.9,
           "cache_read": 0.05,
           "cache_write": 0.3,
+          "source": "zai"
+        },
+        {
+          "from": "2026-10-20",
+          "in": 0.3,
+          "out": 0.9,
+          "cache_read": 0.05,
+          "cache_write": 0,
           "source": "zai"
         }
       ]
@@ -178360,6 +180369,19 @@
         }
       ]
     },
+    "zenmux\u0000minimax-m3.1-flash": {
+      "id": "minimax-m3.1-flash",
+      "rates": [
+        {
+          "from": "2026-10-20",
+          "in": 0.15,
+          "out": 0.6,
+          "cache_read": 0.015,
+          "cache_write": 0.15,
+          "source": "zenmux"
+        }
+      ]
+    },
     "zenmux\u0000qwen3-coder-plus": {
       "id": "qwen3-coder-plus",
       "rates": [
@@ -179995,6 +182017,7 @@
     "gemini-robotics-er-1-6-preview": "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1.6-preview-latest": "gemini-robotics-er-1.6-preview",
     "gemini-robotics-er-1p6-preview": "gemini-robotics-er-1.6-preview",
+    "gemini-robotics-er-2-preview-latest": "gemini-robotics-er-2-preview",
     "gemma-2-27b-it-latest": "gemma-2-27b-it",
     "gemma-2-2b-it-latest": "gemma-2-2b-it",
     "gemma-3-12b-it-latest": "gemma-3-12b-it",
@@ -180648,6 +182671,7 @@
     "gpt-5-nano-latest": "gpt-5-nano",
     "gpt-5-nano@eu-latest": "gpt-5-nano@eu",
     "gpt-5-pro-latest": "gpt-5-pro",
+    "gpt-5-search-api-latest": "gpt-5-search-api",
     "gpt-5-thinking-latest": "gpt-5-thinking",
     "gpt-5.1-2025-11-13-latest": "gpt-5.1-2025-11-13",
     "gpt-5.1-chat-latest": "gpt-5.1-chat",
@@ -180802,6 +182826,8 @@
     "gpt-image-2p5-flare": "gpt-image-2.5-flare",
     "gpt-image-2p5-sunburst": "gpt-image-2.5-sunburst",
     "gpt-latest": "gpt",
+    "gpt-live-1-latest": "gpt-live-1",
+    "gpt-live-transcribe-latest": "gpt-live-transcribe",
     "gpt-luna-latest": "gpt-luna",
     "gpt-mini-latest": "gpt-mini",
     "gpt-oss-120b-cs-latest": "gpt-oss-120b-cs",
@@ -180826,6 +182852,7 @@
     "gpt-realtime-mini-latest": "gpt-realtime-mini",
     "gpt-sol-latest": "gpt-sol",
     "gpt-terra-latest": "gpt-terra",
+    "gpt-transcribe-latest": "gpt-transcribe",
     "granite-4-0-h-micro": "granite-4.0-h-micro",
     "granite-4-1-8b": "granite-4.1-8b",
     "granite-4-2-8b": "granite-4.2-8b",
@@ -181511,6 +183538,7 @@
     "mercury-2.5-preview-latest": "mercury-2.5-preview",
     "mercury-2p5": "mercury-2.5",
     "mercury-2p5-preview": "mercury-2.5-preview",
+    "mercury-3-latest": "mercury-3",
     "mercury-coder-small-latest": "mercury-coder-small",
     "mercury-edit-2-latest": "mercury-edit-2",
     "meta-llama-3-1-405b-instruct-turbo": "meta-llama-3.1-405b-instruct-turbo",
@@ -181672,6 +183700,7 @@
     "minimax-m2p7:free": "minimax-m2.7:free",
     "minimax-m3-1-flash": "minimax-m3.1-flash",
     "minimax-m3-1-flash-free": "minimax-m3.1-flash-free",
+    "minimax-m3-1-flash-latest": "minimax-m3-1-flash",
     "minimax-m3-1-flash-preview": "minimax-m3.1-flash-preview",
     "minimax-m3-1-flash:free": "minimax-m3.1-flash:free",
     "minimax-m3-free-latest": "minimax-m3-free",
@@ -183097,6 +185126,7 @@
     "wayfarer-large-70b-llama-3.3-latest": "wayfarer-large-70b-llama-3.3",
     "wayfarer-large-70b-llama-3p3": "wayfarer-large-70b-llama-3.3",
     "weaver-latest": "weaver",
+    "whisper-1-latest": "whisper-1",
     "whisper-large-v3-latest": "whisper-large-v3",
     "whisper-large-v3-turbo-latest": "whisper-large-v3-turbo",
     "wizardlm-2-8x22b-latest": "wizardlm-2-8x22b",
