@@ -4,6 +4,7 @@ import (
 	"cmp"
 	"context"
 	"encoding/json"
+	"fmt"
 	"io/fs"
 	"os"
 	"path/filepath"
@@ -76,6 +77,10 @@ type codexRecord struct {
 			Context int64       `json:"model_context_window"`
 		} `json:"info"`
 	} `json:"payload"`
+
+	// covered marks a token_count whose call a structured record already
+	// counts. It still sets the baseline for spotting repeats.
+	covered bool
 }
 
 func (c *Codex) Scan(ctx context.Context, emit func(model.Turn)) error {
@@ -146,12 +151,15 @@ func scanCodexLegacy(records []codexRecord) []model.Turn {
 		provider  string
 		forked    bool
 		subagent  bool
-		turns     []model.Turn
+		turns     []codexSnapshot
 
 		// Replay detection — see replayGap.
 		lastTS        time.Time
 		burstResolved bool
-		pending       []model.Turn
+		pending       []codexSnapshot
+
+		// signature of the previous usage snapshot, see codexSignature
+		lastSig string
 	)
 
 	// flushBurst decides what to do with the held opening run once the first
@@ -203,6 +211,12 @@ func scanCodexLegacy(records []codexRecord) []model.Turn {
 			continue
 		}
 		lu := *r.Payload.Info.Last
+		sig := codexSignature(r.Payload.Info.Total, lu)
+		repeat := sig == lastSig
+		lastSig = sig
+		if r.covered {
+			continue
+		}
 		// input_tokens is GROSS here: it includes cache reads and writes.
 		// Netting is required or cache reads get billed twice, once at the
 		// input rate and once at the cache-read rate.
@@ -225,7 +239,7 @@ func scanCodexLegacy(records []codexRecord) []model.Turn {
 			continue // corrupt or empty record
 		}
 
-		turn := model.Turn{
+		turn := codexSnapshot{Turn: model.Turn{
 			SessionID:       sessionID,
 			Agent:           model.AgentCodex,
 			Timestamp:       parseTime(r.Timestamp),
@@ -235,7 +249,7 @@ func scanCodexLegacy(records []codexRecord) []model.Turn {
 			Usage:           usage,
 			Subagent:        subagent,
 			ReplayHeuristic: forked,
-		}
+		}, repeat: repeat}
 
 		if !forked || burstResolved {
 			turns = append(turns, turn)
@@ -253,11 +267,38 @@ func scanCodexLegacy(records []codexRecord) []model.Turn {
 	}
 	flushBurst()
 
-	backfillModels(turns)
+	// repeats stay in the sequence until keys are assigned, so dropping them
+	// leaves the keys of the kept turns unchanged
+	all := make([]model.Turn, len(turns))
 	for i := range turns {
-		turns[i].Key = codexKey(sessionID, i+1)
+		all[i] = turns[i].Turn
 	}
-	return turns
+	backfillModels(all)
+	var kept []model.Turn
+	for i := range all {
+		all[i].Key = codexKey(sessionID, i+1)
+		if !turns[i].repeat {
+			kept = append(kept, all[i])
+		}
+	}
+	return kept
+}
+
+// codexSnapshot is a legacy token_count turn before repeats are dropped.
+type codexSnapshot struct {
+	model.Turn
+	repeat bool
+}
+
+// codexSignature identifies a token_count snapshot. Codex re-emits the same
+// snapshot seconds or minutes later without a new call, and only the
+// cumulative total shows it: it moves with every real call. Rollouts without
+// totals fall back to comparing the per-call usage.
+func codexSignature(total *codexUsage, last codexUsage) string {
+	if total != nil {
+		return fmt.Sprintf("total:%+v", *total)
+	}
+	return fmt.Sprintf("last:%+v", last)
 }
 
 // backfillModels fills in turns logged before the first turn_context named a

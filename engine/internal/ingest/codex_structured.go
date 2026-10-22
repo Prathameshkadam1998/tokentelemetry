@@ -75,7 +75,7 @@ func codexStructured(records []codexRecord) ([]codexRecord, []model.Turn) {
 	var legacy []codexRecord
 	for i, r := range records {
 		if covered[segments[i]] && r.Type == "event_msg" && r.Payload.Type == "token_count" {
-			continue
+			r.covered = true
 		}
 		legacy = append(legacy, r)
 	}

@@ -2,6 +2,7 @@ package ingest
 
 import (
 	"context"
+	"encoding/json"
 	"os"
 	"path/filepath"
 	"strings"
@@ -230,6 +231,62 @@ func codexTokens(ts string, in, cached, out int64) string {
 		`"total_token_usage":` + last + `,"last_token_usage":` + last + `}}}`
 }
 
+// codexSnapshotLine writes a token_count whose cumulative total is given
+// separately from the call's own usage; a nil total omits the field.
+func codexSnapshotLine(ts string, last codexUsage, total *codexUsage) string {
+	info := map[string]any{"last_token_usage": last}
+	if total != nil {
+		info["total_token_usage"] = total
+	}
+	b, err := json.Marshal(map[string]any{"timestamp": ts, "type": "event_msg",
+		"payload": map[string]any{"type": "token_count", "info": info}})
+	if err != nil {
+		panic(err)
+	}
+	return string(b)
+}
+
+// Codex re-emits an unchanged token_count snapshot seconds or minutes after the
+// call it describes. Counting every copy billed 17.8K output tokens twice in
+// one audited week.
+func TestCodexSkipsRepeatedSnapshots(t *testing.T) {
+	root := t.TempDir()
+	a := codexUsage{Input: 1000, Cached: 800, Output: 40}
+	b := codexUsage{Input: 1200, Cached: 1000, Output: 60}
+	totalA := a
+	totalB := codexUsage{Input: 2200, Cached: 1800, Output: 100}
+	writeFile(t, filepath.Join(root, "sessions", "2026", "10", "16", "rollout-x-r1.jsonl"),
+		codexMeta("r1", "", "user", "gpt-5.6-terra"),
+		codexSnapshotLine("2026-10-16T08:57:00.000Z", a, &totalA),
+		codexSnapshotLine("2026-10-16T08:57:34.000Z", a, &totalA),
+		codexSnapshotLine("2026-10-16T09:01:46.000Z", b, &totalB),
+		codexSnapshotLine("2026-10-16T09:02:38.000Z", b, &totalB),
+	)
+	// rollouts without totals fall back to comparing per-call usage
+	writeFile(t, filepath.Join(root, "sessions", "2026", "10", "16", "rollout-x-r2.jsonl"),
+		codexMeta("r2", "", "user", "gpt-5.6-terra"),
+		codexSnapshotLine("2026-10-16T10:00:00.000Z", a, nil),
+		codexSnapshotLine("2026-10-16T10:01:00.000Z", a, nil),
+		codexSnapshotLine("2026-10-16T10:02:00.000Z", b, nil),
+	)
+	turns := scan(t, newCodexAt(root))
+	keys := map[string]int64{}
+	for _, x := range turns {
+		keys[x.Key] = x.Usage.Output
+	}
+	// r1 keeps a and b, r2 keeps a and b: 40+60+40+60
+	if got, want := totalOut(turns), int64(200); got != want || len(turns) != 4 {
+		t.Fatalf("output = %d over %d turns, want %d over 4", got, len(turns), want)
+	}
+	// kept turns keep the sequence numbers they had before repeats were dropped
+	want := map[string]int64{"codex|r1|1": 40, "codex|r1|3": 60, "codex|r2|1": 40, "codex|r2|3": 60}
+	for k, v := range want {
+		if keys[k] != v {
+			t.Errorf("key %s output = %d, want %d (keys %v)", k, keys[k], v, keys)
+		}
+	}
+}
+
 // Codex reports a GROSS input that already includes cached tokens. Failing to
 // net it bills the cache twice — once at input rate, once at cache-read rate.
 func TestCodexNetsGrossInput(t *testing.T) {
@@ -309,9 +366,11 @@ func TestCodexSkipsReplayWithDriftingTimestamps(t *testing.T) {
 func TestCodexKeepsSpacedCallsOnFork(t *testing.T) {
 	root := t.TempDir()
 	lines := []string{codexMeta("s8", "s1", "subagent", "gpt-5.6-terra")}
+	call := codexUsage{Input: 100, Output: 10}
 	for i := range 5 {
 		ts := time.Date(2026, 8, 2, 10, i*2, 0, 0, time.UTC)
-		lines = append(lines, codexTokens(ts.Format("2006-01-02T15:04:05.000Z"), 100, 0, 10))
+		total := codexUsage{Input: 100 * int64(i+1), Output: 10 * int64(i+1)}
+		lines = append(lines, codexSnapshotLine(ts.Format("2006-01-02T15:04:05.000Z"), call, &total))
 	}
 	writeFile(t, filepath.Join(root, "sessions", "2026", "08", "02", "rollout-x-s8.jsonl"), lines...)
 
@@ -341,12 +400,13 @@ func TestCodexKeepsLoneFirstCallOnFork(t *testing.T) {
 func TestCodexPlainSessionKeepsEverything(t *testing.T) {
 	root := t.TempDir()
 	ts := "2026-08-01T10:00:02.000Z"
-	writeFile(t, filepath.Join(root, "sessions", "2026", "08", "01", "rollout-x-s4.jsonl"),
-		codexMeta("s4", "", "user", "gpt-5.6-terra"),
-		codexTokens(ts, 100, 0, 10),
-		codexTokens(ts, 100, 0, 10),
-		codexTokens(ts, 100, 0, 10),
-	)
+	call := codexUsage{Input: 100, Output: 10}
+	lines := []string{codexMeta("s4", "", "user", "gpt-5.6-terra")}
+	for i := range int64(3) {
+		total := codexUsage{Input: 100 * (i + 1), Output: 10 * (i + 1)}
+		lines = append(lines, codexSnapshotLine(ts, call, &total))
+	}
+	writeFile(t, filepath.Join(root, "sessions", "2026", "08", "01", "rollout-x-s4.jsonl"), lines...)
 	turns := scan(t, newCodexAt(root))
 	if got, want := totalOut(turns), int64(30); got != want {
 		t.Errorf("output = %d, want %d", got, want)
@@ -362,7 +422,7 @@ func TestCodexBackfillsModelLoggedLate(t *testing.T) {
 		codexMeta("s5", "", "user", ""), // no model on the meta
 		codexTokens("2026-08-01T10:00:02.000Z", 100, 0, 10),
 		codexTurnContext("gpt-5.6-sol"),
-		codexTokens("2026-08-01T10:00:09.000Z", 100, 0, 10),
+		codexSnapshotLine("2026-08-01T10:00:09.000Z", codexUsage{Input: 100, Output: 10}, &codexUsage{Input: 200, Output: 20}),
 	)
 	turns := scan(t, newCodexAt(root))
 	if len(turns) != 2 {
