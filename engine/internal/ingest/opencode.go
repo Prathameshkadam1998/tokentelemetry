@@ -21,8 +21,10 @@ import (
 // SQLite-backed agents: unlike Hermes, the per-call detail survives, so turns
 // carry their own clock and bucket into the correct local day.
 //
-// Token counts here are already NET of cache: the payload's total equals
-// input + output + cache.read, so input must not be reduced again.
+// Token counts here are already NET of cache, and reasoning is reported beside
+// output rather than inside it: the payload's total equals
+// input + output + reasoning + cache.read + cache.write. Input must not be
+// reduced again, and reasoning is folded into output (see kiloTokens.usage).
 type OpenCode struct {
 	dbPath  string
 	dbPaths []string
@@ -85,19 +87,11 @@ func (o *OpenCode) Roots() []string {
 
 // openCodeMessage is the subset of the JSON payload we need.
 type openCodeMessage struct {
-	Role       string `json:"role"`
-	ModelID    string `json:"modelID"`
-	ProviderID string `json:"providerID"`
-	Tokens     struct {
-		Input     int64 `json:"input"`
-		Output    int64 `json:"output"`
-		Reasoning int64 `json:"reasoning"`
-		Cache     struct {
-			Read  int64 `json:"read"`
-			Write int64 `json:"write"`
-		} `json:"cache"`
-	} `json:"tokens"`
-	Time struct {
+	Role       string     `json:"role"`
+	ModelID    string     `json:"modelID"`
+	ProviderID string     `json:"providerID"`
+	Tokens     kiloTokens `json:"tokens"`
+	Time       struct {
 		Created   int64 `json:"created"`
 		Completed int64 `json:"completed"`
 	} `json:"time"`
@@ -179,14 +173,7 @@ func scanOpenCodeDB(ctx context.Context, path string, emit func(model.Turn)) err
 		if m.ModelID == "" {
 			m.ModelID = "unknown"
 		}
-		usage := model.Usage{
-			Input:      m.Tokens.Input,
-			Output:     m.Tokens.Output,
-			CacheRead:  m.Tokens.Cache.Read,
-			CacheWrite: m.Tokens.Cache.Write,
-			Reasoning:  m.Tokens.Reasoning,
-		}
-		usage, ok := usage.Sanitize()
+		usage, ok := m.Tokens.usage().Sanitize()
 		if !ok || usage.IsZero() {
 			continue
 		}

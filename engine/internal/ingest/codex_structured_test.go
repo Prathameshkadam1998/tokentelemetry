@@ -133,3 +133,34 @@ func TestCodexLegacyCacheWritesAreNotFreshInput(t *testing.T) {
 		t.Fatalf("cache write double counted: %+v", turns)
 	}
 }
+
+// A turn that makes no model call can still re-emit the previous turn's
+// snapshot. That previous call was counted from its structured record, so the
+// repeat must be recognised across the boundary to the legacy fallback.
+func TestCodexRepeatAfterStructuredTurnIsNotCounted(t *testing.T) {
+	root := t.TempDir()
+	u := codexUsage{Input: 1000, Cached: 600, Output: 20}
+	next := codexUsage{Input: 500, Output: 7}
+	nextTotal := codexUsage{Input: 1500, Cached: 600, Output: 27}
+	writeFile(t, filepath.Join(root, "sessions", "rollout-s.jsonl"),
+		codexMeta("s", "", "user", "example"),
+		codexContextWithID("turn-a", "example"),
+		structuredLine("s", "turn-a", "r1", "2026-10-16T08:57:34.000Z", u),
+		codexSnapshotLine("2026-10-16T08:57:34.100Z", u, &u),
+		codexContextWithID("turn-b", "example"),
+		codexSnapshotLine("2026-10-16T09:01:46.000Z", u, &u),
+		codexContextWithID("turn-c", "example"),
+		codexSnapshotLine("2026-10-16T09:05:00.000Z", next, &nextTotal),
+	)
+	turns := codexAccounted(t, root)
+	if len(turns) != 2 || sumUsage(turns).Output != 27 {
+		t.Fatalf("turns: %+v", turns)
+	}
+	// the dropped repeat still holds sequence 1, so the call keeps the key it
+	// had before repeats were dropped
+	for _, v := range turns {
+		if strings.HasPrefix(v.Key, "codex|") && v.Key != "codex|s|2" {
+			t.Fatalf("legacy key shifted: %+v", v)
+		}
+	}
+}

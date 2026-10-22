@@ -135,7 +135,8 @@ func TestKiloCurrentAccountingAndMetadata(t *testing.T) {
 		t.Fatalf("turns = %+v", turns)
 	}
 	turn := turns[0]
-	wantUsage := model.Usage{Input: 100, Output: 20, Reasoning: 7, CacheRead: 60, CacheWrite: 10}
+	// current Kilo stores reasoning beside output, so output carries both
+	wantUsage := model.Usage{Input: 100, Output: 27, Reasoning: 7, CacheRead: 60, CacheWrite: 10}
 	if turn.Usage != wantUsage {
 		t.Fatalf("usage = %+v, want %+v; input must remain net", turn.Usage, wantUsage)
 	}
@@ -147,6 +148,31 @@ func TestKiloCurrentAccountingAndMetadata(t *testing.T) {
 	}
 	if got := turn.Timestamp; !got.Equal(time.UnixMilli(created)) {
 		t.Fatalf("timestamp = %s, want row timestamp %s", got, time.UnixMilli(created))
+	}
+}
+
+// Older Kilo builds stored output with reasoning already inside, which their
+// total shows by leaving reasoning out. Folding it in again would double it.
+func TestKiloOlderOutputAlreadyHoldsReasoning(t *testing.T) {
+	path := filepath.Join(t.TempDir(), "kilo.db")
+	db := openKiloFixture(t, path, true, false)
+	// 100 + 30 + 60 + 10 = 200, reasoning not added on top
+	insertKiloCurrent(t, db, "old", "ses_main", "assistant", 1_000,
+		`{"model":{"id":"m","providerID":"p"},"tokens":{"total":200,"input":100,"output":30,"reasoning":12,"cache":{"read":60,"write":10}}}`)
+	// 100 + 30 + 12 + 60 + 10 = 212, reasoning beside output
+	insertKiloCurrent(t, db, "new", "ses_main", "assistant", 2_000,
+		`{"model":{"id":"m","providerID":"p"},"tokens":{"total":212,"input":100,"output":30,"reasoning":12,"cache":{"read":60,"write":10}}}`)
+	turns, err := scanKiloFixture(t, path)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(turns) != 2 || turns[0].Usage.Output != 30 || turns[1].Usage.Output != 42 {
+		t.Fatalf("turns = %+v", turns)
+	}
+	for _, turn := range turns {
+		if turn.Usage.Reasoning != 12 {
+			t.Fatalf("reasoning lost: %+v", turn.Usage)
+		}
 	}
 }
 
@@ -193,10 +219,10 @@ func TestKiloCurrentWinsDuplicateAndLegacyOnlyUsageSurvives(t *testing.T) {
 	if turns[0].Model != "current-model" || turns[0].Usage.Input != 11 {
 		t.Fatalf("legacy duplicate won: %+v", turns[0])
 	}
-	if turns[1].Model != "legacy-only-model" || turns[1].Usage != (model.Usage{Input: 31, Output: 7, Reasoning: 2, CacheRead: 13, CacheWrite: 1}) {
+	if turns[1].Model != "legacy-only-model" || turns[1].Usage != (model.Usage{Input: 31, Output: 9, Reasoning: 2, CacheRead: 13, CacheWrite: 1}) {
 		t.Fatalf("legacy-only usage lost: %+v", turns[1])
 	}
-	if got := sumKiloUsage(turns); got != (model.Usage{Input: 42, Output: 9, Reasoning: 5, CacheRead: 17, CacheWrite: 6}) {
+	if got := sumKiloUsage(turns); got != (model.Usage{Input: 42, Output: 14, Reasoning: 5, CacheRead: 17, CacheWrite: 6}) {
 		t.Fatalf("independently summed usage = %+v", got)
 	}
 }
