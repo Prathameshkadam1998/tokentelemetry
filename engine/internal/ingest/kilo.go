@@ -81,13 +81,35 @@ func kiloExistingUniqueFiles(paths []string) []string {
 }
 
 type kiloTokens struct {
-	Input     int64 `json:"input"`
-	Output    int64 `json:"output"`
-	Reasoning int64 `json:"reasoning"`
+	Total     *int64 `json:"total"`
+	Input     int64  `json:"input"`
+	Output    int64  `json:"output"`
+	Reasoning int64  `json:"reasoning"`
 	Cache     struct {
 		Read  int64 `json:"read"`
 		Write int64 `json:"write"`
 	} `json:"cache"`
+}
+
+// usage normalises the token block OpenCode and Kilo share. Current builds of
+// both store reasoning beside output, not inside it, and bill it at the output
+// rate: total = input + output + reasoning + cache. Older Kilo builds stored
+// output with reasoning already inside, which their total shows as
+// input + output + cache. Folding reasoning into output keeps it the subset of
+// output it is for every other agent, so it gets counted and priced.
+func (t kiloTokens) usage() model.Usage {
+	output := t.Output
+	inside := t.Total != nil && *t.Total == t.Input+t.Output+t.Cache.Read+t.Cache.Write
+	if t.Reasoning > 0 && !inside {
+		output += t.Reasoning
+	}
+	return model.Usage{
+		Input:      t.Input,
+		Output:     output,
+		Reasoning:  t.Reasoning,
+		CacheRead:  t.Cache.Read,
+		CacheWrite: t.Cache.Write,
+	}
 }
 
 type kiloCurrentMessage struct {
@@ -357,13 +379,7 @@ func kiloTurn(id, sessionID, directory string, created int64, modelID, providerI
 	if modelID == "" {
 		modelID = "unknown"
 	}
-	usage, ok := (model.Usage{
-		Input:      tokens.Input,
-		Output:     tokens.Output,
-		Reasoning:  tokens.Reasoning,
-		CacheRead:  tokens.Cache.Read,
-		CacheWrite: tokens.Cache.Write,
-	}).Sanitize()
+	usage, ok := tokens.usage().Sanitize()
 	if !ok || usage.IsZero() {
 		return model.Turn{}, false
 	}
