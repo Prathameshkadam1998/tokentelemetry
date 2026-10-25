@@ -18,7 +18,7 @@ try {
     go build -trimpath -o (Join-Path $repo 'dist/tt.exe') ./cmd/tt
     if ($LASTEXITCODE -ne 0) { throw 'Short CLI build failed' }
 } finally { Pop-Location }
-foreach ($name in @('Install.ps1','Launch.ps1','Stop.ps1','README.md')) { Copy-Item -LiteralPath (Join-Path $PSScriptRoot $name) -Destination $bundle -Force }
+foreach ($name in @('Install.ps1','Launch.ps1','Stop.ps1','Uninstall.ps1','README.md')) { Copy-Item -LiteralPath (Join-Path $PSScriptRoot $name) -Destination $bundle -Force }
 Copy-Item -LiteralPath (Join-Path $repo 'LICENSE') -Destination $bundle -Force
 $zip = Join-Path $repo 'dist/TokenTelemetryObservatory-Windows-x64.zip'
 Compress-Archive -Path (Join-Path $bundle '*') -DestinationPath $zip -Force
