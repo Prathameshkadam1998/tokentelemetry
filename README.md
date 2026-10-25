@@ -1,5 +1,14 @@
 # TokenTelemetry
 
+## Laptop observatory addition
+
+This checkout also includes a Windows-installable local dashboard, an Ollama
+measurement proxy, and optional SSH-based Mac CPU/memory monitoring. The Go
+accounting engine below is retained unchanged. See
+[Observatory setup and limitations](observatory/README.md), or build the Windows
+bundle with `powershell -File observatory/build.ps1`. No remote service or
+deployment is required.
+
 Local token and cost reports for AI coding agents, built around a Go accounting
 engine. Reads existing logs and SQLite databases. Reports need no Python runtime,
 web server or browser. Usage logs stay local.
